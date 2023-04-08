@@ -1,0 +1,26 @@
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\bin\Debug\Lab2.exe
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\bin\Debug\Lab2.pdb
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\bin\Debug\ImageProcessingLibrary.dll
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\bin\Debug\ImageProcessingLibrary.pdb
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.Form1.resources
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.csproj.CopyComplete
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.exe
+C:\Users\grigoriystd\source\repos\Lab2\Lab2\obj\Debug\Lab2.pdb
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.Form1.resources
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.exe
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.pdb
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\bin\Debug\Lab2.exe
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\bin\Debug\Lab2.pdb
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\bin\Debug\ImageProcessingLibrary.dll
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\bin\Debug\ImageProcessingLibrary.pdb
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №2\Lab2\Lab2\Lab2\obj\Debug\Lab2.csproj.CopyComplete

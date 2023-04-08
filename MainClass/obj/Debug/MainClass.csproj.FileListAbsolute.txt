@@ -1,0 +1,16 @@
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №4\Laboratory4\MainClass\bin\Debug\MainClass.dll
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №4\Laboratory4\MainClass\bin\Debug\MainClass.pdb
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №4\Laboratory4\MainClass\obj\Debug\MainClass.csproj.CoreCompileInputs.cache
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №4\Laboratory4\MainClass\obj\Debug\MainClass.dll
+C:\Users\grigoriystd\Desktop\Балашов_Лабораторные\Лабораторная работа №4\Laboratory4\MainClass\obj\Debug\MainClass.pdb
+C:\Users\grigoriystd\Desktop\Введение в программирование на платформе #Net_Лабораторные Балашов Г. С\Лабораторная работа №4\Laboratory4\MainClass\bin\Debug\MainClass.dll
+C:\Users\grigoriystd\Desktop\Введение в программирование на платформе #Net_Лабораторные Балашов Г. С\Лабораторная работа №4\Laboratory4\MainClass\bin\Debug\MainClass.pdb
+C:\Users\grigoriystd\Desktop\Введение в программирование на платформе #Net_Лабораторные Балашов Г. С\Лабораторная работа №4\Laboratory4\MainClass\obj\Debug\MainClass.csproj.CoreCompileInputs.cache
+C:\Users\grigoriystd\Desktop\Введение в программирование на платформе #Net_Лабораторные Балашов Г. С\Лабораторная работа №4\Laboratory4\MainClass\obj\Debug\MainClass.dll
+C:\Users\grigoriystd\Desktop\Введение в программирование на платформе #Net_Лабораторные Балашов Г. С\Лабораторная работа №4\Laboratory4\MainClass\obj\Debug\MainClass.pdb
+C:\GitHub\Public-utilities-calculator\MainClass\bin\Debug\MainClass.dll
+C:\GitHub\Public-utilities-calculator\MainClass\bin\Debug\MainClass.pdb
+C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.csproj.AssemblyReference.cache
+C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.csproj.CoreCompileInputs.cache
+C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.dll
+C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.pdb
