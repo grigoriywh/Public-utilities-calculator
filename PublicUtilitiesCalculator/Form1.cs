@@ -141,19 +141,49 @@ namespace PublicUtilitiesCalculator
 
         private void TarifiSave_Click(object sender, EventArgs e)
         {
-            float intKvartPlataTarif = 0;
+            float floatKvartPlataTarif = 0;
+            float floatElectricityTarif = 0;
             //int
             if (KvartPlataTarif.Text != "")
             {
-                intKvartPlataTarif = float.Parse(KvartPlataTarif.Text);
+                floatKvartPlataTarif = float.Parse(KvartPlataTarif.Text);
             }
 
+            if (KvartPlataTarif.Text != "")
+            {
+                floatElectricityTarif = float.Parse(ElectricityTarif.Text);
+            }
+
+            
+
             ClassXML src = new ClassXML();
-            src.KvartPlataTarif = intKvartPlataTarif;
+            src.KvartPlataTarif = floatKvartPlataTarif;
+            src.ElectricityTarif = floatElectricityTarif;
 
-            Serialize_XmlWriter(src, "example1_MainClass.xml");
+            // Get the current directory.
+            string path = Directory.GetCurrentDirectory() + "/Tarifi";
 
-            textBox1.Text += File.ReadAllText("example1_MainClass.xml");
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            int curmonth = DateTime.Now.Month;
+            int curyear = DateTime.Now.Year;
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = n; i >= 0; i--)
+            {
+                if (curmonth.Equals(0))
+                    curmonth = 12;
+                curmonth--;
+            }
+            string[] months = { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
+
+           
+            Serialize_XmlWriter(src, "Tarifi/" + "Тарифы_" + months[(curmonth)]  + "_" + curyear + ".xml");
+
+            textBox1.Text += File.ReadAllText("Tarifi/" + "Тарифы_" + months[(curmonth)] + "_" + curyear + ".xml");
             textBox1.Text += Environment.NewLine;
 
         }

@@ -170,66 +170,6 @@
   <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;TarifiSave.Name" xml:space="preserve">
-    <value>TarifiSave</value>
-  </data>
-  <data name="&gt;&gt;TarifiSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TarifiSave.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;TarifiSave.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 500</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>447, 181</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Основной функционал </value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TarifiSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -306,14 +246,38 @@
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 226</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 181</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Основной функционал </value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 504</value>
+    <value>31, 245</value>
   </data>
   <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 172</value>
+    <value>458, 433</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -511,7 +475,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>653, 485</value>
+    <value>38, 226</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 16</value>
@@ -533,81 +497,6 @@
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox5.Name" xml:space="preserve">
-    <value>KvartPlatatextBox5</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox5.Parent" xml:space="preserve">
-    <value>KvartPlatagroupBox</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;KvartPlataTarif.Name" xml:space="preserve">
-    <value>KvartPlataTarif</value>
-  </data>
-  <data name="&gt;&gt;KvartPlataTarif.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KvartPlataTarif.Parent" xml:space="preserve">
-    <value>KvartPlatagroupBox</value>
-  </data>
-  <data name="&gt;&gt;KvartPlataTarif.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox3.Name" xml:space="preserve">
-    <value>KvartPlatatextBox3</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox3.Parent" xml:space="preserve">
-    <value>KvartPlatagroupBox</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox2.Name" xml:space="preserve">
-    <value>KvartPlatatextBox2</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox2.Parent" xml:space="preserve">
-    <value>KvartPlatagroupBox</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatatextBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="KvartPlatagroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
-  <data name="KvartPlatagroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 71</value>
-  </data>
-  <data name="KvartPlatagroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>931, 62</value>
-  </data>
-  <data name="KvartPlatagroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="KvartPlatagroupBox.Text" xml:space="preserve">
-    <value>1. Квартплата </value>
-  </data>
-  <data name="&gt;&gt;KvartPlatagroupBox.Name" xml:space="preserve">
-    <value>KvartPlatagroupBox</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatagroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatagroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;KvartPlatagroupBox.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="KvartPlatatextBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>785, 25</value>
@@ -705,6 +594,33 @@
   <data name="&gt;&gt;KvartPlatatextBox2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="KvartPlatagroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="KvartPlatagroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 71</value>
+  </data>
+  <data name="KvartPlatagroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>931, 62</value>
+  </data>
+  <data name="KvartPlatagroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="KvartPlatagroupBox.Text" xml:space="preserve">
+    <value>1. Квартплата </value>
+  </data>
+  <data name="&gt;&gt;KvartPlatagroupBox.Name" xml:space="preserve">
+    <value>KvartPlatagroupBox</value>
+  </data>
+  <data name="&gt;&gt;KvartPlatagroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KvartPlatagroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;KvartPlatagroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -772,7 +688,7 @@
     <value>3</value>
   </data>
   <data name="monthCalendar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 514</value>
+    <value>793, 442</value>
   </data>
   <data name="monthCalendar1.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -822,105 +738,6 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>ElectricitygroupBox</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
-    <value>ElectricitygroupBox</value>
-  </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
-    <value>ElectricitygroupBox</value>
-  </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
-    <value>ElectricitygroupBox</value>
-  </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ElectricitycheckBox1.Name" xml:space="preserve">
-    <value>ElectricitycheckBox1</value>
-  </data>
-  <data name="&gt;&gt;ElectricitycheckBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ElectricitycheckBox1.Parent" xml:space="preserve">
-    <value>ElectricitygroupBox</value>
-  </data>
-  <data name="&gt;&gt;ElectricitycheckBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ElectricitytextBox1.Name" xml:space="preserve">
-    <value>ElectricitytextBox1</value>
-  </data>
-  <data name="&gt;&gt;ElectricitytextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ElectricitytextBox1.Parent" xml:space="preserve">
-    <value>ElectricitygroupBox</value>
-  </data>
-  <data name="&gt;&gt;ElectricitytextBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="ElectricitygroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
-  <data name="ElectricitygroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 139</value>
-  </data>
-  <data name="ElectricitygroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>931, 62</value>
-  </data>
-  <data name="ElectricitygroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="ElectricitygroupBox.Text" xml:space="preserve">
-    <value>2. Электроэнергия</value>
-  </data>
-  <data name="&gt;&gt;ElectricitygroupBox.Name" xml:space="preserve">
-    <value>ElectricitygroupBox</value>
-  </data>
-  <data name="&gt;&gt;ElectricitygroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ElectricitygroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ElectricitygroupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>785, 25</value>
   </data>
@@ -945,28 +762,28 @@
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ElectricityTarif.Location" type="System.Drawing.Point, System.Drawing">
     <value>625, 25</value>
   </data>
-  <data name="textBox3.Multiline" type="System.Boolean, mscorlib">
+  <data name="ElectricityTarif.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ElectricityTarif.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="ElectricityTarif.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;ElectricityTarif.Name" xml:space="preserve">
+    <value>ElectricityTarif</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;ElectricityTarif.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ElectricityTarif.Parent" xml:space="preserve">
     <value>ElectricitygroupBox</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ElectricityTarif.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
@@ -1067,6 +884,33 @@
   </data>
   <data name="&gt;&gt;ElectricitytextBox1.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="ElectricitygroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="ElectricitygroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 139</value>
+  </data>
+  <data name="ElectricitygroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>931, 62</value>
+  </data>
+  <data name="ElectricitygroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="ElectricitygroupBox.Text" xml:space="preserve">
+    <value>2. Электроэнергия</value>
+  </data>
+  <data name="&gt;&gt;ElectricitygroupBox.Name" xml:space="preserve">
+    <value>ElectricitygroupBox</value>
+  </data>
+  <data name="&gt;&gt;ElectricitygroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ElectricitygroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ElectricitygroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

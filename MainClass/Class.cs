@@ -17,6 +17,7 @@ namespace MainClass
 
         [XmlAttribute]
         public float KvartPlataTarif;
+        public float ElectricityTarif;
         public int someint;
 
         public string[] stringArray;

@@ -56,7 +56,7 @@ namespace PublicUtilitiesCalculator
             this.label8 = new System.Windows.Forms.Label();
             this.ElectricitygroupBox = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ElectricityTarif = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.ElectricitycheckBox1 = new System.Windows.Forms.CheckBox();
@@ -219,7 +219,7 @@ namespace PublicUtilitiesCalculator
             // ElectricitygroupBox
             // 
             this.ElectricitygroupBox.Controls.Add(this.textBox2);
-            this.ElectricitygroupBox.Controls.Add(this.textBox3);
+            this.ElectricitygroupBox.Controls.Add(this.ElectricityTarif);
             this.ElectricitygroupBox.Controls.Add(this.textBox4);
             this.ElectricitygroupBox.Controls.Add(this.textBox5);
             this.ElectricitygroupBox.Controls.Add(this.ElectricitycheckBox1);
@@ -233,10 +233,10 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
             // 
-            // textBox3
+            // ElectricityTarif
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            resources.ApplyResources(this.ElectricityTarif, "ElectricityTarif");
+            this.ElectricityTarif.Name = "ElectricityTarif";
             // 
             // textBox4
             // 
@@ -315,7 +315,7 @@ namespace PublicUtilitiesCalculator
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox ElectricitygroupBox;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox ElectricityTarif;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         public System.Windows.Forms.CheckBox ElectricitycheckBox1;

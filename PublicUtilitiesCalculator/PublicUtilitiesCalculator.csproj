@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Igh0zt-Ios7-Style-Metro-Ui-MetroUI-Apps-Calculator-Alt.ico</ApplicationIcon>
+    <ApplicationIcon>Calculator-Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -102,8 +102,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Igh0zt-Ios7-Style-Metro-Ui-MetroUI-Apps-Calculator-Alt.ico" />
-    <Content Include="Kescowethianz Icon 15.ico" />
+    <Content Include="Calculator-Icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MainClass\MainClass.csproj">
