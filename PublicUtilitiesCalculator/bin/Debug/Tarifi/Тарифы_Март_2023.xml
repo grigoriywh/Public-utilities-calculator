@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tarifi KvartPlataTarif="312,2" ElectricityTarif="212,2">
+  <KvartPlataTarif>
+    <KvartPlataprice>312,2</KvartPlataprice>
+  </KvartPlataTarif>
+  <ElectricityTarif>
+    <Electricityprice>212,2</Electricityprice>
+  </ElectricityTarif>
+</Tarifi>

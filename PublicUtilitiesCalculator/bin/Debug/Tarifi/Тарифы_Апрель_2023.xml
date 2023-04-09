@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tarifi Time="9 апреля 2023 г. 11:56:34">
+  <KvartPlataTarif>
+    <KvartPlataprice>215</KvartPlataprice>
+  </KvartPlataTarif>
+  <ElectricityTarif>
+    <ElectricityTarif150>
+      <ElectricityTarif150Price>2,42</ElectricityTarif150Price>
+    </ElectricityTarif150>
+    <ElectricityTarif150_800>
+      <ElectricityTarif150_800Price>3,23</ElectricityTarif150_800Price>
+    </ElectricityTarif150_800>
+    <ElectricityTarif800>
+      <ElectricityTarif800Price>5,42</ElectricityTarif800Price>
+    </ElectricityTarif800>
+  </ElectricityTarif>
+</Tarifi>

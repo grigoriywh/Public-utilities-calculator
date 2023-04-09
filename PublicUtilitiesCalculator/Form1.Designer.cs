@@ -34,7 +34,7 @@ namespace PublicUtilitiesCalculator
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.TarifiSave = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1Result = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
@@ -55,12 +55,19 @@ namespace PublicUtilitiesCalculator
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label8 = new System.Windows.Forms.Label();
             this.ElectricitygroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ElectricityTarif = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ElectricitytextBox5 = new System.Windows.Forms.TextBox();
+            this.ElectricitytextBox3 = new System.Windows.Forms.TextBox();
+            this.ElectricitytextBox2 = new System.Windows.Forms.TextBox();
             this.ElectricitycheckBox1 = new System.Windows.Forms.CheckBox();
             this.ElectricitytextBox1 = new System.Windows.Forms.TextBox();
+            this.TarifiLoad = new System.Windows.Forms.Button();
+            this.checkBoxBenefitChildrenOfWar = new System.Windows.Forms.CheckBox();
+            this.ElectricityTarif150_800 = new System.Windows.Forms.TextBox();
+            this.ElectricityTarif150 = new System.Windows.Forms.TextBox();
+            this.ElectricityTarif800 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.KvartPlatagroupBox.SuspendLayout();
             this.ElectricitygroupBox.SuspendLayout();
@@ -82,10 +89,13 @@ namespace PublicUtilitiesCalculator
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBoxBenefitChildrenOfWar);
+            this.groupBox2.Controls.Add(this.TarifiLoad);
             this.groupBox2.Controls.Add(this.TarifiSave);
+            this.groupBox2.Controls.Add(this.monthCalendar1);
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.button1Result);
             this.groupBox2.Controls.Add(this.button2);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
@@ -98,12 +108,12 @@ namespace PublicUtilitiesCalculator
             this.TarifiSave.UseVisualStyleBackColor = true;
             this.TarifiSave.Click += new System.EventHandler(this.TarifiSave_Click);
             // 
-            // button1
+            // button1Result
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.button1Result, "button1Result");
+            this.button1Result.Name = "button1Result";
+            this.button1Result.UseVisualStyleBackColor = true;
+            this.button1Result.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -218,39 +228,41 @@ namespace PublicUtilitiesCalculator
             // 
             // ElectricitygroupBox
             // 
-            this.ElectricitygroupBox.Controls.Add(this.textBox2);
-            this.ElectricitygroupBox.Controls.Add(this.ElectricityTarif);
-            this.ElectricitygroupBox.Controls.Add(this.textBox4);
-            this.ElectricitygroupBox.Controls.Add(this.textBox5);
+            this.ElectricitygroupBox.Controls.Add(this.label11);
+            this.ElectricitygroupBox.Controls.Add(this.label10);
+            this.ElectricitygroupBox.Controls.Add(this.label9);
+            this.ElectricitygroupBox.Controls.Add(this.ElectricityTarif800);
+            this.ElectricitygroupBox.Controls.Add(this.ElectricityTarif150);
+            this.ElectricitygroupBox.Controls.Add(this.ElectricityTarif150_800);
+            this.ElectricitygroupBox.Controls.Add(this.ElectricitytextBox5);
+            this.ElectricitygroupBox.Controls.Add(this.ElectricitytextBox3);
+            this.ElectricitygroupBox.Controls.Add(this.ElectricitytextBox2);
             this.ElectricitygroupBox.Controls.Add(this.ElectricitycheckBox1);
             this.ElectricitygroupBox.Controls.Add(this.ElectricitytextBox1);
             resources.ApplyResources(this.ElectricitygroupBox, "ElectricitygroupBox");
             this.ElectricitygroupBox.Name = "ElectricitygroupBox";
             this.ElectricitygroupBox.TabStop = false;
             // 
-            // textBox2
+            // ElectricitytextBox5
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.ElectricitytextBox5, "ElectricitytextBox5");
+            this.ElectricitytextBox5.Name = "ElectricitytextBox5";
             // 
-            // ElectricityTarif
+            // ElectricitytextBox3
             // 
-            resources.ApplyResources(this.ElectricityTarif, "ElectricityTarif");
-            this.ElectricityTarif.Name = "ElectricityTarif";
+            resources.ApplyResources(this.ElectricitytextBox3, "ElectricitytextBox3");
+            this.ElectricitytextBox3.Name = "ElectricitytextBox3";
             // 
-            // textBox4
+            // ElectricitytextBox2
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
+            resources.ApplyResources(this.ElectricitytextBox2, "ElectricitytextBox2");
+            this.ElectricitytextBox2.Name = "ElectricitytextBox2";
             // 
             // ElectricitycheckBox1
             // 
             resources.ApplyResources(this.ElectricitycheckBox1, "ElectricitycheckBox1");
+            this.ElectricitycheckBox1.Checked = true;
+            this.ElectricitycheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ElectricitycheckBox1.Name = "ElectricitycheckBox1";
             this.ElectricitycheckBox1.UseVisualStyleBackColor = true;
             // 
@@ -259,13 +271,55 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.ElectricitytextBox1, "ElectricitytextBox1");
             this.ElectricitytextBox1.Name = "ElectricitytextBox1";
             // 
+            // TarifiLoad
+            // 
+            resources.ApplyResources(this.TarifiLoad, "TarifiLoad");
+            this.TarifiLoad.Name = "TarifiLoad";
+            this.TarifiLoad.UseVisualStyleBackColor = true;
+            this.TarifiLoad.Click += new System.EventHandler(this.TarifiLoad_Click);
+            // 
+            // checkBoxBenefitChildrenOfWar
+            // 
+            resources.ApplyResources(this.checkBoxBenefitChildrenOfWar, "checkBoxBenefitChildrenOfWar");
+            this.checkBoxBenefitChildrenOfWar.Name = "checkBoxBenefitChildrenOfWar";
+            this.checkBoxBenefitChildrenOfWar.UseVisualStyleBackColor = true;
+            // 
+            // ElectricityTarif150_800
+            // 
+            resources.ApplyResources(this.ElectricityTarif150_800, "ElectricityTarif150_800");
+            this.ElectricityTarif150_800.Name = "ElectricityTarif150_800";
+            // 
+            // ElectricityTarif150
+            // 
+            resources.ApplyResources(this.ElectricityTarif150, "ElectricityTarif150");
+            this.ElectricityTarif150.Name = "ElectricityTarif150";
+            // 
+            // ElectricityTarif800
+            // 
+            resources.ApplyResources(this.ElectricityTarif800, "ElectricityTarif800");
+            this.ElectricityTarif800.Name = "ElectricityTarif800";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ElectricitygroupBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.KvartPlatagroupBox);
@@ -279,6 +333,7 @@ namespace PublicUtilitiesCalculator
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.KvartPlatagroupBox.ResumeLayout(false);
             this.KvartPlatagroupBox.PerformLayout();
             this.ElectricitygroupBox.ResumeLayout(false);
@@ -293,7 +348,7 @@ namespace PublicUtilitiesCalculator
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button1Result;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.TextBox KvartPlatatextBox;
         private System.Windows.Forms.Button button2;
@@ -314,12 +369,19 @@ namespace PublicUtilitiesCalculator
         private System.Windows.Forms.Button TarifiSave;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox ElectricitygroupBox;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox ElectricityTarif;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox ElectricitytextBox5;
+        private System.Windows.Forms.TextBox ElectricitytextBox3;
+        private System.Windows.Forms.TextBox ElectricitytextBox2;
         public System.Windows.Forms.CheckBox ElectricitycheckBox1;
         private System.Windows.Forms.TextBox ElectricitytextBox1;
+        private System.Windows.Forms.Button TarifiLoad;
+        private System.Windows.Forms.CheckBox checkBoxBenefitChildrenOfWar;
+        private System.Windows.Forms.TextBox ElectricityTarif800;
+        private System.Windows.Forms.TextBox ElectricityTarif150;
+        private System.Windows.Forms.TextBox ElectricityTarif150_800;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }
 

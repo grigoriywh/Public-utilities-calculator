@@ -24,6 +24,8 @@ namespace PublicUtilitiesCalculator
         }
 
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        // Сериализация 
 
         // Main class
 
@@ -90,6 +92,220 @@ namespace PublicUtilitiesCalculator
             writer.Close();
         }
 
+        static void SerializeTarifi_XmlWriter(ClassXML obj, string fileName)
+        {
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            XmlWriter writer = XmlWriter.Create(fileName, settings);
+
+            writer.WriteStartDocument();
+            writer.WriteStartElement("Tarifi");
+
+            writer.WriteAttributeString("Time", DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString());
+
+
+            writer.WriteStartElement("KvartPlataTarif");
+            writer.WriteElementString("KvartPlataprice", obj.KvartPlataTarif.ToString());
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("ElectricityTarif");
+                writer.WriteStartElement("ElectricityTarif150");
+                    writer.WriteElementString("ElectricityTarif150Price", obj.ElectricityTarif150.ToString());
+                writer.WriteEndElement();
+                writer.WriteStartElement("ElectricityTarif150_800");
+                    writer.WriteElementString("ElectricityTarif150_800Price", obj.ElectricityTarif150_800.ToString());
+                writer.WriteEndElement();
+                writer.WriteStartElement("ElectricityTarif800");
+                    writer.WriteElementString("ElectricityTarif800Price", obj.ElectricityTarif800.ToString());
+                writer.WriteEndElement();
+            writer.WriteEndElement();
+
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+            writer.Close();
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        // Десериализация 
+
+
+        static ClassXML Deserialize_XmlReader(string fileName)
+        {
+            ClassXML obj = new ClassXML();
+            XmlReader reader = XmlReader.Create(fileName);
+            List<string> stringList = new List<string>();
+            List<int> intList = new List<int>();
+            int rows = 1, columns = 1;
+            reader.Read();
+            for (; ; )
+            {
+                XmlNodeType type = reader.NodeType;
+                if (type == XmlNodeType.Element)
+                {
+                    switch (reader.Name)
+                    {
+                        case "Tarifi":
+                            reader.MoveToAttribute("someint");
+                            obj.someint = reader.ReadContentAsInt();
+                            break;
+                        case "XMLArrayint":
+                            reader.MoveToAttribute("rows");
+                            rows = reader.ReadContentAsInt();
+                            reader.MoveToAttribute("columns");
+                            columns = reader.ReadContentAsInt();
+                            break;
+                        case "v":
+                            stringList.Add(reader.ReadElementContentAsString());
+                            break;
+                        case "n":
+                            intList.Add(reader.ReadElementContentAsInt());
+                            break;
+                        case "XMLImage":
+                            {
+
+                            }
+                            break;
+                        default:
+                            reader.Read();
+                            break;
+                    }
+                }
+                else if (reader.NodeType == XmlNodeType.EndElement)
+                {
+                    switch (reader.Name)
+                    {
+                        case "XMLStringArray":
+                            obj.XMLStringArray = stringList.ToArray();
+                            break;
+
+                        case "XMLArrayint":
+
+                            int[] tempArray = intList.ToArray();
+                            int[,] MyArray = new int[rows, columns];
+
+                            int CounterNumbers = 0;
+                            for (int i = 0; i < rows; i++)
+                            {
+
+                                for (int j = 0; j < columns - 1; j++)
+                                {
+
+                                    MyArray[i, j] = tempArray[CounterNumbers];
+                                    CounterNumbers += 1;
+                                }
+                            }
+
+                            obj.XMLArrayint = MyArray;
+                            break;
+                    }
+                    if (!reader.Read())
+                        break;
+                }
+                else
+                {
+                    if (!reader.Read())
+                        break;
+                }
+            }
+
+            reader.Close();
+
+            return obj;
+        }
+
+        static ClassXML DeserializeTarifi_XmlReader(string fileName)
+        {
+            ClassXML obj = new ClassXML();
+            XmlReader reader = XmlReader.Create(fileName);
+            List<string> stringList = new List<string>();
+            List<int> intList = new List<int>();
+            int rows = 1, columns = 1;
+            reader.Read();
+            for (; ; )
+            {
+                XmlNodeType type = reader.NodeType;
+                if (type == XmlNodeType.Element)
+                {
+                    switch (reader.Name)
+                    {
+                        case "KvartPlataprice":
+                            obj.KvartPlataTarif = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        case "ElectricityTarif150Price":
+                            obj.ElectricityTarif150 = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        case "ElectricityTarif150_800Price":
+                            obj.ElectricityTarif150_800 = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        case "ElectricityTarif800Price":
+                            obj.ElectricityTarif800 = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        case "XMLImage":
+                            {
+
+                            }
+                            break;
+                        default:
+                            reader.Read();
+                            break;
+                    }
+                }
+                else if (reader.NodeType == XmlNodeType.EndElement)
+                {
+                    switch (reader.Name)
+                    {
+                        case "XMLStringArray":
+                            obj.XMLStringArray = stringList.ToArray();
+                            break;
+
+                        case "XMLArrayint":
+
+                            int[] tempArray = intList.ToArray();
+                            int[,] MyArray = new int[rows, columns];
+
+                            int CounterNumbers = 0;
+                            for (int i = 0; i < rows; i++)
+                            {
+
+                                for (int j = 0; j < columns - 1; j++)
+                                {
+
+                                    MyArray[i, j] = tempArray[CounterNumbers];
+                                    CounterNumbers += 1;
+                                }
+                            }
+
+                            obj.XMLArrayint = MyArray;
+                            break;
+                    }
+                    if (!reader.Read())
+                        break;
+                }
+                else
+                {
+                    if (!reader.Read())
+                        break;
+                }
+            }
+
+            reader.Close();
+
+            return obj;
+        }
+
+
+        public string StrManipulations(string LocalStringTempValue)
+        {
+
+            Char[] ch = LocalStringTempValue.ToCharArray();
+            for (int i = 0; i < ch.Length; i++)
+            {
+                if (ch[i] == '.')
+                    ch[i] = ',';
+            }
+            LocalStringTempValue = new string(ch);
+            return LocalStringTempValue;
+        }
 
 
         ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -112,19 +328,108 @@ namespace PublicUtilitiesCalculator
         private void button1_Click(object sender, EventArgs e)  // Выбор директории
         {
 
-            /* FolderBrowserDialog ChoiceFolder = new FolderBrowserDialog();
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            {
-                textBox1.Text = folderBrowserDialog1.SelectedPath;
-            }
-            */
+            textBox1.Text += Environment.NewLine;
+
+            int curmonth = DateTime.Now.Month;
+
+            textBox1.Text = textBox1.Text + "\n Дата :" + DateTime.Now.ToLongDateString() + "  " + DateTime.Now.ToLongTimeString();
+            textBox1.Text += Environment.NewLine;
+
+
+
+
 
             DateTime d = monthCalendar1.SelectionRange.Start;
             textBox1.Text = textBox1.Text + "\n Дата :" + d.Date.ToString();
+            textBox1.Text += Environment.NewLine;
             textBox1.Text = textBox1.Text + "\n Месяц :" + d.Month.ToString();
+            textBox1.Text += Environment.NewLine;
             textBox1.Text = textBox1.Text + "\n Год :" + d.Year.ToString();
             //DateTime b = monthCalendar1.SelectionRange.Start;
             //textBox1.Text = Convert.ToString(monthCalendar1.TodayDate);
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Блок расчета 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+
+            //	Заменяем точки на запятые
+            KvartPlataTarif.Text = StrManipulations(KvartPlataTarif.Text);
+            ElectricityTarif150.Text = StrManipulations(ElectricityTarif150.Text);
+            ElectricityTarif150_800.Text = StrManipulations(ElectricityTarif150_800.Text);
+            ElectricityTarif800.Text = StrManipulations(ElectricityTarif800.Text);
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Квартплата 
+            float KvartPlataResult = 0;
+            float floatKvartPlataTarif = 0;
+
+            if (KvartPlataTarif.Text != "")
+            {
+                floatKvartPlataTarif = float.Parse(KvartPlataTarif.Text);
+            }
+
+            KvartPlataResult = floatKvartPlataTarif;
+
+            KvartPlatatextBox5.Text = Convert.ToString(KvartPlataResult);
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            // Элекетроэнергия
+
+            float ElectricityOnToTheStartMonth = 0;
+            float ElectricityOnToTheEndMonth = 0;
+            float ElectricityDifference = 0;
+
+
+            float ElectricityResult = 0;
+            float floatElectricityTarif = 0;
+
+            if (ElectricityTarif150.Text != "")
+            {
+                floatElectricityTarif = float.Parse(ElectricityTarif150.Text);
+            }
+
+            if (ElectricitytextBox1.Text != "")
+            {
+                ElectricityOnToTheStartMonth = float.Parse(ElectricitytextBox1.Text);
+            }
+
+            if (ElectricitytextBox2.Text != "")
+            {
+                ElectricityOnToTheEndMonth = float.Parse(ElectricitytextBox2.Text);
+            }
+
+
+            if (ElectricitycheckBox1.Checked != true)
+            {
+                ElectricityResult = 777;
+                ElectricitytextBox5.Text = Convert.ToString(ElectricityResult);
+                ElectricitytextBox5.Text = "Счетчика не может не быть";
+            }
+
+            // Элекетроэнергия - разница в показаниях на начало и конец меясяца 
+            ElectricityDifference = ElectricityOnToTheEndMonth - ElectricityOnToTheStartMonth;
+
+
+
+
+
+            if (checkBoxBenefitChildrenOfWar.Checked == true)
+            {
+
+
+
+
+            }
+            else
+            {
+
+
+            }
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            // Природный газ
 
         }
 
@@ -141,36 +446,73 @@ namespace PublicUtilitiesCalculator
 
         private void TarifiSave_Click(object sender, EventArgs e)
         {
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Заменяем точки на запятые
+
+            KvartPlataTarif.Text = StrManipulations(KvartPlataTarif.Text);
+
+            ElectricityTarif150.Text = StrManipulations(ElectricityTarif150.Text);
+            ElectricityTarif150_800.Text = StrManipulations(ElectricityTarif150_800.Text);
+            ElectricityTarif800.Text = StrManipulations(ElectricityTarif800.Text);
+
+
+
             float floatKvartPlataTarif = 0;
-            float floatElectricityTarif = 0;
-            //int
+
+            float floatElectricityTarif150 = 0;
+            float floatElectricityTarif150_800 = 0;
+            float floatElectricityTarif800 = 0;
+
+            // float
             if (KvartPlataTarif.Text != "")
             {
                 floatKvartPlataTarif = float.Parse(KvartPlataTarif.Text);
             }
 
-            if (KvartPlataTarif.Text != "")
+            if (ElectricityTarif150.Text != "")
             {
-                floatElectricityTarif = float.Parse(ElectricityTarif.Text);
+                floatElectricityTarif150 = float.Parse(ElectricityTarif150.Text);
             }
 
-            
+            if (ElectricityTarif150_800.Text != "")
+            {
+                floatElectricityTarif150_800 = float.Parse(ElectricityTarif150_800.Text);
+            }
+
+            if (ElectricityTarif800.Text != "")
+            {
+                floatElectricityTarif800 = float.Parse(ElectricityTarif800.Text);
+            }
+
+
 
             ClassXML src = new ClassXML();
             src.KvartPlataTarif = floatKvartPlataTarif;
-            src.ElectricityTarif = floatElectricityTarif;
+
+            src.ElectricityTarif150 = floatElectricityTarif150;
+            src.ElectricityTarif150_800 = floatElectricityTarif150_800;
+            src.ElectricityTarif800 = floatElectricityTarif800;
+
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////
+            // Создаем папку с тарифами если её нет
 
             // Get the current directory.
             string path = Directory.GetCurrentDirectory() + "/Tarifi";
-
 
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }
 
-            int curmonth = DateTime.Now.Month;
-            int curyear = DateTime.Now.Year;
+            /////////////////////////////////////////////////////////////////////////////////////////////
+            // Находим выбранный месяц
+
+            DateTime d = monthCalendar1.SelectionRange.Start;
+            int curmonth = d.Month;
+            int curyear = d.Year;
             int n = Convert.ToInt32(Console.ReadLine());
             for (int i = n; i >= 0; i--)
             {
@@ -180,11 +522,36 @@ namespace PublicUtilitiesCalculator
             }
             string[] months = { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
 
-           
-            Serialize_XmlWriter(src, "Tarifi/" + "Тарифы_" + months[(curmonth)]  + "_" + curyear + ".xml");
+            /////////////////////////////////////////////////////////////////////////////////////////////
+            // Записываем тарифы в XML
+
+            SerializeTarifi_XmlWriter(src, "Tarifi/" + "Тарифы_" + months[(curmonth)]  + "_" + curyear + ".xml");
 
             textBox1.Text += File.ReadAllText("Tarifi/" + "Тарифы_" + months[(curmonth)] + "_" + curyear + ".xml");
             textBox1.Text += Environment.NewLine;
+
+        }
+
+
+        private void TarifiLoad_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog OPF = new OpenFileDialog();
+            if (OPF.ShowDialog() == DialogResult.OK)
+            {
+                //MessageBox.Show(OPF.FileName);
+                textBox1.Text = OPF.FileName;
+            }
+
+            if (OPF.FileName != "")
+            {
+                ClassXML dst = DeserializeTarifi_XmlReader(OPF.FileName);
+
+                KvartPlataTarif.Text = Convert.ToString(dst.KvartPlataTarif);
+                ElectricityTarif150.Text = Convert.ToString(dst.ElectricityTarif150);
+                ElectricityTarif150_800.Text = Convert.ToString(dst.ElectricityTarif150_800);
+                ElectricityTarif800.Text = Convert.ToString(dst.ElectricityTarif800);
+            }
 
         }
 
@@ -241,5 +608,7 @@ namespace PublicUtilitiesCalculator
         {
 
         }
+
+
     }
 }
