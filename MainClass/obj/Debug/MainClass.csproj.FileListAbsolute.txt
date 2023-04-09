@@ -13,3 +13,4 @@ C:\GitHub\Public-utilities-calculator\MainClass\bin\Debug\MainClass.pdb
 C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.csproj.CoreCompileInputs.cache
 C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.dll
 C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.pdb
+C:\GitHub\Public-utilities-calculator\MainClass\obj\Debug\MainClass.csproj.AssemblyReference.cache

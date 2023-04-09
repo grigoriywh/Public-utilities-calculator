@@ -73,6 +73,7 @@ namespace PublicUtilitiesCalculator
             this.ElectricitytextBox1 = new System.Windows.Forms.TextBox();
             this.checkBoxBenefitChildrenOfWar = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GasTarif = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -131,7 +132,6 @@ namespace PublicUtilitiesCalculator
             this.ApartmentcheckBox = new System.Windows.Forms.CheckBox();
             this.HousecheckBox = new System.Windows.Forms.CheckBox();
             this.HumantextBox = new System.Windows.Forms.TextBox();
-            this.GasTarif = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.KvartPlatagroupBox.SuspendLayout();
             this.ElectricitygroupBox.SuspendLayout();
@@ -422,6 +422,11 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // GasTarif
+            // 
+            resources.ApplyResources(this.GasTarif, "GasTarif");
+            this.GasTarif.Name = "GasTarif";
             // 
             // label18
             // 
@@ -773,11 +778,6 @@ namespace PublicUtilitiesCalculator
             // 
             resources.ApplyResources(this.HumantextBox, "HumantextBox");
             this.HumantextBox.Name = "HumantextBox";
-            // 
-            // GasTarif
-            // 
-            resources.ApplyResources(this.GasTarif, "GasTarif");
-            this.GasTarif.Name = "GasTarif";
             // 
             // Form1
             // 

@@ -612,7 +612,7 @@ namespace PublicUtilitiesCalculator
             if (800 <= ElectricityDifference)
             {
                 ElectricityPrice150 = 150;
-                ElectricityPrice150_800 = 800;
+                ElectricityPrice150_800 = 650;
                 ElectricityPrice800 = ElectricityDifference - 800;
             }
 
@@ -721,7 +721,7 @@ namespace PublicUtilitiesCalculator
                 if (6000 <= GasDifference)
                 {
                     GasPrice2500 = 2500;
-                    GasPrice2500_6000 = 6000;
+                    GasPrice2500_6000 = 3500;
                     GasPrice6000 = GasDifference - 6000;
                 }
 
@@ -741,6 +741,10 @@ namespace PublicUtilitiesCalculator
                         ValueThisMonth = 370;
                     }
 
+                    if (ValueThisMonth > GasPrice2500) // Летний период
+                    {
+                        ValueThisMonth = GasPrice2500;
+                    }
 
                     GasPrice2500 = GasPrice2500 - ValueThisMonth;
                     GasResult = GasResult + (ValueThisMonth * (floatGasTarif2500 / 100) * 75) + (GasPrice2500 * floatGasTarif2500) + (GasPrice2500_6000 * floatGasTarif2500_6000) + (GasPrice6000 * floatGasTarif6000);
@@ -859,8 +863,6 @@ namespace PublicUtilitiesCalculator
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
             // Мусор
-
-
 
             float TrashResult = 0;
             float floatTrashTarif = 0;

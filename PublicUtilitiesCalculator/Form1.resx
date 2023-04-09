@@ -2683,7 +2683,7 @@
     <value>3</value>
   </data>
   <data name="textBoxSUMM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
   <data name="textBoxSUMM.Location" type="System.Drawing.Point, System.Drawing">
     <value>816, 542</value>
