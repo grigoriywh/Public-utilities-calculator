@@ -86,7 +86,7 @@ namespace PublicUtilitiesCalculator
             this.GastextBox5 = new System.Windows.Forms.TextBox();
             this.GastextBox3 = new System.Windows.Forms.TextBox();
             this.GastextBox2 = new System.Windows.Forms.TextBox();
-            this.GascheckBox = new System.Windows.Forms.CheckBox();
+            this.GascheckBox1 = new System.Windows.Forms.CheckBox();
             this.GastextBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -106,21 +106,22 @@ namespace PublicUtilitiesCalculator
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.HeatingtextBox5 = new System.Windows.Forms.TextBox();
+            this.HeatingTarif = new System.Windows.Forms.TextBox();
+            this.HeatingtextBox3 = new System.Windows.Forms.TextBox();
+            this.HeatingtextBox2 = new System.Windows.Forms.TextBox();
+            this.HeatingcheckBox1 = new System.Windows.Forms.CheckBox();
+            this.HeatingtextBox1 = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.TrashtextBox5 = new System.Windows.Forms.TextBox();
+            this.TrashTarif = new System.Windows.Forms.TextBox();
+            this.TrashtextBox3 = new System.Windows.Forms.TextBox();
+            this.TrashtextBox2 = new System.Windows.Forms.TextBox();
+            this.TrashcheckBox1 = new System.Windows.Forms.CheckBox();
+            this.TrashtextBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.KvartPlatagroupBox.SuspendLayout();
             this.ElectricitygroupBox.SuspendLayout();
@@ -129,6 +130,7 @@ namespace PublicUtilitiesCalculator
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // button7
@@ -140,8 +142,6 @@ namespace PublicUtilitiesCalculator
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.TarifiLoad);
-            this.groupBox2.Controls.Add(this.TarifiSave);
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button1Result);
             resources.ApplyResources(this.groupBox2, "groupBox2");
@@ -405,7 +405,7 @@ namespace PublicUtilitiesCalculator
             this.groupBox1.Controls.Add(this.GastextBox5);
             this.groupBox1.Controls.Add(this.GastextBox3);
             this.groupBox1.Controls.Add(this.GastextBox2);
-            this.groupBox1.Controls.Add(this.GascheckBox);
+            this.groupBox1.Controls.Add(this.GascheckBox1);
             this.groupBox1.Controls.Add(this.GastextBox1);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
@@ -477,13 +477,13 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.GastextBox2, "GastextBox2");
             this.GastextBox2.Name = "GastextBox2";
             // 
-            // GascheckBox
+            // GascheckBox1
             // 
-            resources.ApplyResources(this.GascheckBox, "GascheckBox");
-            this.GascheckBox.Checked = true;
-            this.GascheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.GascheckBox.Name = "GascheckBox";
-            this.GascheckBox.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.GascheckBox1, "GascheckBox1");
+            this.GascheckBox1.Checked = true;
+            this.GascheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.GascheckBox1.Name = "GascheckBox1";
+            this.GascheckBox1.UseVisualStyleBackColor = true;
             // 
             // GastextBox1
             // 
@@ -590,12 +590,12 @@ namespace PublicUtilitiesCalculator
             // 
             this.groupBox5.Controls.Add(this.label32);
             this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.textBox2);
-            this.groupBox5.Controls.Add(this.textBox3);
-            this.groupBox5.Controls.Add(this.textBox4);
-            this.groupBox5.Controls.Add(this.textBox5);
-            this.groupBox5.Controls.Add(this.checkBox1);
-            this.groupBox5.Controls.Add(this.textBox6);
+            this.groupBox5.Controls.Add(this.HeatingtextBox5);
+            this.groupBox5.Controls.Add(this.HeatingTarif);
+            this.groupBox5.Controls.Add(this.HeatingtextBox3);
+            this.groupBox5.Controls.Add(this.HeatingtextBox2);
+            this.groupBox5.Controls.Add(this.HeatingcheckBox1);
+            this.groupBox5.Controls.Add(this.HeatingtextBox1);
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
@@ -610,47 +610,47 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
             // 
-            // textBox2
+            // HeatingtextBox5
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.HeatingtextBox5, "HeatingtextBox5");
+            this.HeatingtextBox5.Name = "HeatingtextBox5";
             // 
-            // textBox3
+            // HeatingTarif
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            resources.ApplyResources(this.HeatingTarif, "HeatingTarif");
+            this.HeatingTarif.Name = "HeatingTarif";
             // 
-            // textBox4
+            // HeatingtextBox3
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
+            resources.ApplyResources(this.HeatingtextBox3, "HeatingtextBox3");
+            this.HeatingtextBox3.Name = "HeatingtextBox3";
             // 
-            // textBox5
+            // HeatingtextBox2
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
+            resources.ApplyResources(this.HeatingtextBox2, "HeatingtextBox2");
+            this.HeatingtextBox2.Name = "HeatingtextBox2";
             // 
-            // checkBox1
+            // HeatingcheckBox1
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.HeatingcheckBox1, "HeatingcheckBox1");
+            this.HeatingcheckBox1.Name = "HeatingcheckBox1";
+            this.HeatingcheckBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // HeatingtextBox1
             // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
+            resources.ApplyResources(this.HeatingtextBox1, "HeatingtextBox1");
+            this.HeatingtextBox1.Name = "HeatingtextBox1";
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.label34);
             this.groupBox6.Controls.Add(this.label35);
-            this.groupBox6.Controls.Add(this.textBox7);
-            this.groupBox6.Controls.Add(this.textBox8);
-            this.groupBox6.Controls.Add(this.textBox9);
-            this.groupBox6.Controls.Add(this.textBox10);
-            this.groupBox6.Controls.Add(this.checkBox2);
-            this.groupBox6.Controls.Add(this.textBox11);
+            this.groupBox6.Controls.Add(this.TrashtextBox5);
+            this.groupBox6.Controls.Add(this.TrashTarif);
+            this.groupBox6.Controls.Add(this.TrashtextBox3);
+            this.groupBox6.Controls.Add(this.TrashtextBox2);
+            this.groupBox6.Controls.Add(this.TrashcheckBox1);
+            this.groupBox6.Controls.Add(this.TrashtextBox1);
             resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
@@ -665,44 +665,53 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
             // 
-            // textBox7
+            // TrashtextBox5
             // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
+            resources.ApplyResources(this.TrashtextBox5, "TrashtextBox5");
+            this.TrashtextBox5.Name = "TrashtextBox5";
             // 
-            // textBox8
+            // TrashTarif
             // 
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
+            resources.ApplyResources(this.TrashTarif, "TrashTarif");
+            this.TrashTarif.Name = "TrashTarif";
             // 
-            // textBox9
+            // TrashtextBox3
             // 
-            resources.ApplyResources(this.textBox9, "textBox9");
-            this.textBox9.Name = "textBox9";
+            resources.ApplyResources(this.TrashtextBox3, "TrashtextBox3");
+            this.TrashtextBox3.Name = "TrashtextBox3";
             // 
-            // textBox10
+            // TrashtextBox2
             // 
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
+            resources.ApplyResources(this.TrashtextBox2, "TrashtextBox2");
+            this.TrashtextBox2.Name = "TrashtextBox2";
             // 
-            // checkBox2
+            // TrashcheckBox1
             // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.TrashcheckBox1, "TrashcheckBox1");
+            this.TrashcheckBox1.Name = "TrashcheckBox1";
+            this.TrashcheckBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // TrashtextBox1
             // 
-            resources.ApplyResources(this.textBox11, "textBox11");
-            this.textBox11.Name = "textBox11";
+            resources.ApplyResources(this.TrashtextBox1, "TrashtextBox1");
+            this.TrashtextBox1.Name = "TrashtextBox1";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.TarifiLoad);
+            this.groupBox7.Controls.Add(this.TarifiSave);
+            resources.ApplyResources(this.groupBox7, "groupBox7");
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.TabStop = false;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ElectricitygroupBox);
@@ -735,6 +744,7 @@ namespace PublicUtilitiesCalculator
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,7 +807,7 @@ namespace PublicUtilitiesCalculator
         private System.Windows.Forms.TextBox GastextBox5;
         private System.Windows.Forms.TextBox GastextBox3;
         private System.Windows.Forms.TextBox GastextBox2;
-        public System.Windows.Forms.CheckBox GascheckBox;
+        public System.Windows.Forms.CheckBox GascheckBox1;
         private System.Windows.Forms.TextBox GastextBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label25;
@@ -817,21 +827,22 @@ namespace PublicUtilitiesCalculator
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox HeatingtextBox5;
+        private System.Windows.Forms.TextBox HeatingTarif;
+        private System.Windows.Forms.TextBox HeatingtextBox3;
+        private System.Windows.Forms.TextBox HeatingtextBox2;
+        public System.Windows.Forms.CheckBox HeatingcheckBox1;
+        private System.Windows.Forms.TextBox HeatingtextBox1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        public System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox TrashtextBox5;
+        private System.Windows.Forms.TextBox TrashTarif;
+        private System.Windows.Forms.TextBox TrashtextBox3;
+        private System.Windows.Forms.TextBox TrashtextBox2;
+        public System.Windows.Forms.CheckBox TrashcheckBox1;
+        private System.Windows.Forms.TextBox TrashtextBox1;
+        private System.Windows.Forms.GroupBox groupBox7;
     }
 }
 

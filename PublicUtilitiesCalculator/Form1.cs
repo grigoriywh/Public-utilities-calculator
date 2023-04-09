@@ -104,9 +104,14 @@ namespace PublicUtilitiesCalculator
             writer.WriteAttributeString("Time", DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString());
 
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            // Квартплата 
             writer.WriteStartElement("KvartPlataTarif");
             writer.WriteElementString("KvartPlataprice", obj.KvartPlataTarif.ToString());
             writer.WriteEndElement();
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Электроэнергия
 
             writer.WriteStartElement("ElectricityTarif");
                 writer.WriteStartElement("ElectricityTarif150");
@@ -119,6 +124,49 @@ namespace PublicUtilitiesCalculator
                     writer.WriteElementString("ElectricityTarif800Price", obj.ElectricityTarif800.ToString());
                 writer.WriteEndElement();
             writer.WriteEndElement();
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Газ
+
+            writer.WriteStartElement("GasTarif");
+
+            writer.WriteStartElement("GasTarif2500");
+            writer.WriteElementString("GasTarif2500Price", obj.GasTarif2500.ToString());
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("GasTarif2500_6000");
+            writer.WriteElementString("GasTarif2500_6000Price", obj.GasTarif2500_6000.ToString());
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("GasTarif6000");
+            writer.WriteElementString("GasTarif6000Price", obj.GasTarif6000.ToString());
+            writer.WriteEndElement();
+
+            writer.WriteEndElement();
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Вода
+
+            writer.WriteStartElement("WaterTarif");
+            writer.WriteElementString("WaterTarifPrice", obj.WaterTarif.ToString());
+            writer.WriteEndElement();
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Отопление
+
+            writer.WriteStartElement("HeatingTarif");
+            writer.WriteElementString("HeatingTarifPrice", obj.HeatingTarif.ToString());
+            writer.WriteEndElement();
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	ТБО
+
+            writer.WriteStartElement("TrashTarif");
+            writer.WriteElementString("TrashTarifPrice", obj.TrashTarif.ToString());
+            writer.WriteEndElement();
+
+
 
             writer.WriteEndElement();
             writer.WriteEndDocument();
@@ -228,9 +276,11 @@ namespace PublicUtilitiesCalculator
                 {
                     switch (reader.Name)
                     {
+                        // Квартплата
                         case "KvartPlataprice":
                             obj.KvartPlataTarif = float.Parse(reader.ReadElementContentAsString());
                             break;
+                        // Электроэнергия
                         case "ElectricityTarif150Price":
                             obj.ElectricityTarif150 = float.Parse(reader.ReadElementContentAsString());
                             break;
@@ -240,46 +290,36 @@ namespace PublicUtilitiesCalculator
                         case "ElectricityTarif800Price":
                             obj.ElectricityTarif800 = float.Parse(reader.ReadElementContentAsString());
                             break;
-                        case "XMLImage":
-                            {
-
-                            }
+                        // Природный газ
+                        case "GasTarif2500Price":
+                            obj.GasTarif2500 = float.Parse(reader.ReadElementContentAsString());
                             break;
+                        case "GasTarif2500_6000Price":
+                            obj.GasTarif2500_6000 = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        case "GasTarif6000Price":
+                            obj.GasTarif6000 = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        // Вода
+                        case "WaterTarifPrice":
+                            obj.WaterTarif = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        // Отопление
+                        case "HeatingTarifPrice":
+                            obj.HeatingTarif = float.Parse(reader.ReadElementContentAsString());
+                            break;
+                        // ТБО
+                        case "TrashTarifPrice":
+                            obj.TrashTarif = float.Parse(reader.ReadElementContentAsString());
+                            break;
+
+
+
+
                         default:
                             reader.Read();
                             break;
                     }
-                }
-                else if (reader.NodeType == XmlNodeType.EndElement)
-                {
-                    switch (reader.Name)
-                    {
-                        case "XMLStringArray":
-                            obj.XMLStringArray = stringList.ToArray();
-                            break;
-
-                        case "XMLArrayint":
-
-                            int[] tempArray = intList.ToArray();
-                            int[,] MyArray = new int[rows, columns];
-
-                            int CounterNumbers = 0;
-                            for (int i = 0; i < rows; i++)
-                            {
-
-                                for (int j = 0; j < columns - 1; j++)
-                                {
-
-                                    MyArray[i, j] = tempArray[CounterNumbers];
-                                    CounterNumbers += 1;
-                                }
-                            }
-
-                            obj.XMLArrayint = MyArray;
-                            break;
-                    }
-                    if (!reader.Read())
-                        break;
                 }
                 else
                 {
@@ -302,6 +342,20 @@ namespace PublicUtilitiesCalculator
             {
                 if (ch[i] == '.')
                     ch[i] = ',';
+            }
+            LocalStringTempValue = new string(ch);
+            return LocalStringTempValue;
+        }
+
+
+        public string StrManipulationsWithSpace(string LocalStringTempValue)
+        {
+
+            Char[] ch = LocalStringTempValue.ToCharArray();
+            for (int i = 0; i < ch.Length; i++)
+            {
+                if (ch[i] == ' ')
+                    ch[i] = '\0';
             }
             LocalStringTempValue = new string(ch);
             return LocalStringTempValue;
@@ -350,6 +404,29 @@ namespace PublicUtilitiesCalculator
             ElectricityTarif150.Text = StrManipulations(ElectricityTarif150.Text);
             ElectricityTarif150_800.Text = StrManipulations(ElectricityTarif150_800.Text);
             ElectricityTarif800.Text = StrManipulations(ElectricityTarif800.Text);
+
+            GasTarif2500.Text = StrManipulations(GasTarif2500.Text);
+            GasTarif2500_6000.Text = StrManipulations(GasTarif2500_6000.Text);
+            GasTarif6000.Text = StrManipulations(GasTarif6000.Text);
+
+            WaterTarif.Text = StrManipulations(WaterTarif.Text);
+            HeatingTarif.Text = StrManipulations(HeatingTarif.Text);
+            TrashTarif.Text = StrManipulations(TrashTarif.Text);
+
+            //	Убираем пробелы
+
+            KvartPlataTarif.Text = StrManipulationsWithSpace(KvartPlataTarif.Text);
+            ElectricityTarif150.Text = StrManipulationsWithSpace(ElectricityTarif150.Text);
+            ElectricityTarif150_800.Text = StrManipulationsWithSpace(ElectricityTarif150_800.Text);
+            ElectricityTarif800.Text = StrManipulationsWithSpace(ElectricityTarif800.Text);
+
+            GasTarif2500.Text = StrManipulationsWithSpace(GasTarif2500.Text);
+            GasTarif2500_6000.Text = StrManipulationsWithSpace(GasTarif2500_6000.Text);
+            GasTarif6000.Text = StrManipulationsWithSpace(GasTarif6000.Text);
+
+            WaterTarif.Text = StrManipulationsWithSpace(WaterTarif.Text);
+            HeatingTarif.Text = StrManipulationsWithSpace(HeatingTarif.Text);
+            TrashTarif.Text = StrManipulationsWithSpace(TrashTarif.Text);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
             //	Квартплата 
@@ -513,6 +590,13 @@ namespace PublicUtilitiesCalculator
             ElectricityTarif150_800.Text = StrManipulations(ElectricityTarif150_800.Text);
             ElectricityTarif800.Text = StrManipulations(ElectricityTarif800.Text);
 
+            GasTarif2500.Text = StrManipulations(GasTarif2500.Text);
+            GasTarif2500_6000.Text = StrManipulations(GasTarif2500_6000.Text);
+            GasTarif6000.Text = StrManipulations(GasTarif6000.Text);
+
+            WaterTarif.Text = StrManipulations(WaterTarif.Text);
+            HeatingTarif.Text = StrManipulations(HeatingTarif.Text);
+            TrashTarif.Text = StrManipulations(TrashTarif.Text);
 
 
             float floatKvartPlataTarif = 0;
@@ -521,12 +605,25 @@ namespace PublicUtilitiesCalculator
             float floatElectricityTarif150_800 = 0;
             float floatElectricityTarif800 = 0;
 
-            // float
+            float floatGasTarif2500 = 0;
+            float floatGasTarif2500_6000 = 0;
+            float floatGasTarif6000 = 0;
+
+            float floatWaterTarif = 0;
+
+            float floatHeatingTarif = 0;
+
+            float floatTrashTarif = 0;
+
+
+
+            // Квартплата 
             if (KvartPlataTarif.Text != "")
             {
                 floatKvartPlataTarif = float.Parse(KvartPlataTarif.Text);
             }
 
+            // Электроэнергия
             if (ElectricityTarif150.Text != "")
             {
                 floatElectricityTarif150 = float.Parse(ElectricityTarif150.Text);
@@ -543,6 +640,49 @@ namespace PublicUtilitiesCalculator
             }
 
 
+            // Природный газ
+            if (GasTarif2500.Text != "")
+            {
+                floatGasTarif2500 = float.Parse(GasTarif2500.Text);
+            }
+
+            if (GasTarif2500_6000.Text != "")
+            {
+                floatGasTarif2500_6000 = float.Parse(GasTarif2500_6000.Text);
+            }
+
+            if (GasTarif6000.Text != "")
+            {
+                floatGasTarif6000 = float.Parse(GasTarif6000.Text);
+            }
+
+
+            // Вода 
+            if (WaterTarif.Text != "")
+            {
+                floatWaterTarif = float.Parse(WaterTarif.Text);
+            }
+
+            // Отопление 
+            if (HeatingTarif.Text != "")
+            {
+                floatHeatingTarif = float.Parse(HeatingTarif.Text);
+            }
+
+
+            // Мусор 
+            if (TrashTarif.Text != "")
+            {
+                floatTrashTarif = float.Parse(TrashTarif.Text);
+            }
+
+
+
+
+
+
+
+
 
             ClassXML src = new ClassXML();
             src.KvartPlataTarif = floatKvartPlataTarif;
@@ -551,6 +691,15 @@ namespace PublicUtilitiesCalculator
             src.ElectricityTarif150_800 = floatElectricityTarif150_800;
             src.ElectricityTarif800 = floatElectricityTarif800;
 
+            src.GasTarif2500 = floatGasTarif2500;
+            src.GasTarif2500_6000 = floatGasTarif2500_6000;
+            src.GasTarif6000 = floatGasTarif6000;
+
+            src.WaterTarif = floatWaterTarif;
+
+            src.HeatingTarif = floatHeatingTarif;
+
+            src.TrashTarif = floatTrashTarif;
 
 
             /////////////////////////////////////////////////////////////////////////////////////////////
@@ -604,10 +753,28 @@ namespace PublicUtilitiesCalculator
             {
                 ClassXML dst = DeserializeTarifi_XmlReader(OPF.FileName);
 
+                // Квартплата
                 KvartPlataTarif.Text = Convert.ToString(dst.KvartPlataTarif);
+
+                // Электроэнергия
                 ElectricityTarif150.Text = Convert.ToString(dst.ElectricityTarif150);
                 ElectricityTarif150_800.Text = Convert.ToString(dst.ElectricityTarif150_800);
                 ElectricityTarif800.Text = Convert.ToString(dst.ElectricityTarif800);
+
+                // Природный газ
+                GasTarif2500.Text = Convert.ToString(dst.GasTarif2500);
+                GasTarif2500_6000.Text = Convert.ToString(dst.GasTarif2500_6000);
+                GasTarif6000.Text = Convert.ToString(dst.GasTarif6000);
+
+                // Вода
+                WaterTarif.Text = Convert.ToString(dst.WaterTarif);
+
+                // Отопление
+                HeatingTarif.Text = Convert.ToString(dst.HeatingTarif);
+
+                // Мусор
+                TrashTarif.Text = Convert.ToString(dst.TrashTarif);
+
             }
 
         }

@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 28</value>
+    <value>26, 82</value>
   </data>
   <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 40</value>
+    <value>176, 40</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button7.TabIndex" type="System.Int32, mscorlib">
@@ -141,31 +141,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TarifiLoad.Name" xml:space="preserve">
-    <value>TarifiLoad</value>
-  </data>
-  <data name="&gt;&gt;TarifiLoad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TarifiLoad.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;TarifiLoad.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;TarifiSave.Name" xml:space="preserve">
-    <value>TarifiSave</value>
-  </data>
-  <data name="&gt;&gt;TarifiSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TarifiSave.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;TarifiSave.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;button1Result.Name" xml:space="preserve">
     <value>button1Result</value>
@@ -177,13 +153,13 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;button1Result.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>789, 640</value>
+    <value>986, 183</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>426, 134</value>
+    <value>219, 134</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -201,17 +177,17 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TarifiLoad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="TarifiLoad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 84</value>
+    <value>112, 31</value>
   </data>
   <data name="TarifiLoad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 38</value>
+    <value>90, 40</value>
   </data>
   <data name="TarifiLoad.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -226,7 +202,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TarifiLoad.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;TarifiLoad.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -235,10 +211,10 @@
     <value>NoControl</value>
   </data>
   <data name="TarifiSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 84</value>
+    <value>16, 31</value>
   </data>
   <data name="TarifiSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 38</value>
+    <value>90, 40</value>
   </data>
   <data name="TarifiSave.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -253,7 +229,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TarifiSave.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;TarifiSave.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -265,7 +241,7 @@
     <value>27, 28</value>
   </data>
   <data name="button1Result.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 40</value>
+    <value>175, 40</value>
   </data>
   <data name="button1Result.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -283,16 +259,16 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;button1Result.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 644</value>
+    <value>161, 541</value>
   </data>
   <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>458, 130</value>
+    <value>458, 122</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -307,7 +283,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -361,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -391,7 +367,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -421,7 +397,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -454,7 +430,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="KvartPlatacheckBoxChetchik.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -490,7 +466,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 607</value>
+    <value>28, 542</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 16</value>
@@ -511,7 +487,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
@@ -610,7 +586,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;KvartPlatagroupBox.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -805,7 +781,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -838,10 +814,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="monthCalendar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1051, 77</value>
+    <value>986, 9</value>
   </data>
   <data name="monthCalendar1.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -856,7 +832,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;monthCalendar1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -889,7 +865,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
@@ -1096,7 +1072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ElectricitygroupBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1704,16 +1680,16 @@
   <data name="&gt;&gt;GastextBox2.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.Name" xml:space="preserve">
-    <value>GascheckBox</value>
+  <data name="&gt;&gt;GascheckBox1.Name" xml:space="preserve">
+    <value>GascheckBox1</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;GascheckBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;GascheckBox1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;GascheckBox1.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="&gt;&gt;GastextBox1.Name" xml:space="preserve">
@@ -1753,7 +1729,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2130,34 +2106,34 @@
   <data name="&gt;&gt;GastextBox2.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="GascheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="GascheckBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="GascheckBox.AutoSize" type="System.Boolean, mscorlib">
+  <data name="GascheckBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="GascheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="GascheckBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="GascheckBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="GascheckBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 40</value>
   </data>
-  <data name="GascheckBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GascheckBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
   </data>
-  <data name="GascheckBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="GascheckBox1.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.Name" xml:space="preserve">
-    <value>GascheckBox</value>
+  <data name="&gt;&gt;GascheckBox1.Name" xml:space="preserve">
+    <value>GascheckBox1</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;GascheckBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;GascheckBox1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;GascheckBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;GascheckBox1.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="GastextBox1.Location" type="System.Drawing.Point, System.Drawing">
@@ -2302,7 +2278,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2578,7 +2554,7 @@
     <value>4</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1037, 275</value>
+    <value>988, 430</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 158</value>
@@ -2772,76 +2748,76 @@
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;HeatingtextBox5.Name" xml:space="preserve">
+    <value>HeatingtextBox5</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox5.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;HeatingTarif.Name" xml:space="preserve">
+    <value>HeatingTarif</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingTarif.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingTarif.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingTarif.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
+  <data name="&gt;&gt;HeatingtextBox3.Name" xml:space="preserve">
+    <value>HeatingtextBox3</value>
   </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox3.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="&gt;&gt;HeatingtextBox2.Name" xml:space="preserve">
+    <value>HeatingtextBox2</value>
   </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox2.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="&gt;&gt;HeatingcheckBox1.Name" xml:space="preserve">
+    <value>HeatingcheckBox1</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingcheckBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingcheckBox1.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingcheckBox1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
+  <data name="&gt;&gt;HeatingtextBox1.Name" xml:space="preserve">
+    <value>HeatingtextBox1</value>
   </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox1.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="groupBox5.Font" type="System.Drawing.Font, System.Drawing">
@@ -2869,7 +2845,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="label32.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2937,151 +2913,151 @@
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="HeatingtextBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>785, 25</value>
   </data>
-  <data name="textBox2.Multiline" type="System.Boolean, mscorlib">
+  <data name="HeatingtextBox5.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeatingtextBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="HeatingtextBox5.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;HeatingtextBox5.Name" xml:space="preserve">
+    <value>HeatingtextBox5</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox5.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="HeatingTarif.Location" type="System.Drawing.Point, System.Drawing">
     <value>625, 25</value>
   </data>
-  <data name="textBox3.Multiline" type="System.Boolean, mscorlib">
+  <data name="HeatingTarif.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeatingTarif.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="HeatingTarif.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;HeatingTarif.Name" xml:space="preserve">
+    <value>HeatingTarif</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingTarif.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingTarif.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingTarif.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="HeatingtextBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>415, 25</value>
   </data>
-  <data name="textBox4.Multiline" type="System.Boolean, mscorlib">
+  <data name="HeatingtextBox3.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeatingtextBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="HeatingtextBox3.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
+  <data name="&gt;&gt;HeatingtextBox3.Name" xml:space="preserve">
+    <value>HeatingtextBox3</value>
   </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox3.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="HeatingtextBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>256, 25</value>
   </data>
-  <data name="textBox5.Multiline" type="System.Boolean, mscorlib">
+  <data name="HeatingtextBox2.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeatingtextBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="HeatingtextBox2.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="&gt;&gt;HeatingtextBox2.Name" xml:space="preserve">
+    <value>HeatingtextBox2</value>
   </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox2.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="checkBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="HeatingcheckBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="HeatingcheckBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="HeatingcheckBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="HeatingcheckBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 30</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeatingcheckBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
   </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="HeatingcheckBox1.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="&gt;&gt;HeatingcheckBox1.Name" xml:space="preserve">
+    <value>HeatingcheckBox1</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingcheckBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingcheckBox1.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingcheckBox1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="HeatingtextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 25</value>
   </data>
-  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeatingtextBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
   </data>
-  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
+  <data name="HeatingtextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
+  <data name="&gt;&gt;HeatingtextBox1.Name" xml:space="preserve">
+    <value>HeatingtextBox1</value>
   </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox1.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HeatingtextBox1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
@@ -3150,151 +3126,151 @@
   <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TrashtextBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>785, 25</value>
   </data>
-  <data name="textBox7.Multiline" type="System.Boolean, mscorlib">
+  <data name="TrashtextBox5.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TrashtextBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox7.TabIndex" type="System.Int32, mscorlib">
+  <data name="TrashtextBox5.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;textBox7.Name" xml:space="preserve">
-    <value>textBox7</value>
+  <data name="&gt;&gt;TrashtextBox5.Name" xml:space="preserve">
+    <value>TrashtextBox5</value>
   </data>
-  <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox5.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TrashTarif.Location" type="System.Drawing.Point, System.Drawing">
     <value>625, 25</value>
   </data>
-  <data name="textBox8.Multiline" type="System.Boolean, mscorlib">
+  <data name="TrashTarif.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TrashTarif.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
+  <data name="TrashTarif.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
-    <value>textBox8</value>
+  <data name="&gt;&gt;TrashTarif.Name" xml:space="preserve">
+    <value>TrashTarif</value>
   </data>
-  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
+  <data name="&gt;&gt;TrashTarif.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TrashTarif.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TrashTarif.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TrashtextBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>415, 25</value>
   </data>
-  <data name="textBox9.Multiline" type="System.Boolean, mscorlib">
+  <data name="TrashtextBox3.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TrashtextBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox9.TabIndex" type="System.Int32, mscorlib">
+  <data name="TrashtextBox3.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;textBox9.Name" xml:space="preserve">
-    <value>textBox9</value>
+  <data name="&gt;&gt;TrashtextBox3.Name" xml:space="preserve">
+    <value>TrashtextBox3</value>
   </data>
-  <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox3.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TrashtextBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>256, 25</value>
   </data>
-  <data name="textBox10.Multiline" type="System.Boolean, mscorlib">
+  <data name="TrashtextBox2.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TrashtextBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
+  <data name="TrashtextBox2.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;textBox10.Name" xml:space="preserve">
-    <value>textBox10</value>
+  <data name="&gt;&gt;TrashtextBox2.Name" xml:space="preserve">
+    <value>TrashtextBox2</value>
   </data>
-  <data name="&gt;&gt;textBox10.Type" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox2.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="checkBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="TrashcheckBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="TrashcheckBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="TrashcheckBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TrashcheckBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 30</value>
   </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TrashcheckBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
   </data>
-  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="TrashcheckBox1.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
-    <value>checkBox2</value>
+  <data name="&gt;&gt;TrashcheckBox1.Name" xml:space="preserve">
+    <value>TrashcheckBox1</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;TrashcheckBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TrashcheckBox1.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TrashcheckBox1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TrashtextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 25</value>
   </data>
-  <data name="textBox11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TrashtextBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
   </data>
-  <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
+  <data name="TrashtextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;textBox11.Name" xml:space="preserve">
-    <value>textBox11</value>
+  <data name="&gt;&gt;TrashtextBox1.Name" xml:space="preserve">
+    <value>TrashtextBox1</value>
   </data>
-  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox1.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;textBox11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TrashtextBox1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="groupBox6.Font" type="System.Drawing.Font, System.Drawing">
@@ -3322,6 +3298,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>986, 327</value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 97</value>
+  </data>
+  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Save/Load</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -3334,7 +3334,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1245, 786</value>
+    <value>1217, 685</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
