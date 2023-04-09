@@ -22,6 +22,8 @@ namespace MainClass
         public float ElectricityTarif150_800;
         public float ElectricityTarif800;
 
+        
+        public float GasTarif;
         public float GasTarif2500;
         public float GasTarif2500_6000;
         public float GasTarif6000;

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Tarifi Time="9 апреля 2023 г. 14:12:42">
+<Tarifi Time="9 апреля 2023 г. 18:10:58">
   <KvartPlataTarif>
     <KvartPlataprice>260,94</KvartPlataprice>
   </KvartPlataTarif>
@@ -15,6 +15,9 @@
     </ElectricityTarif800>
   </ElectricityTarif>
   <GasTarif>
+    <GasTarifPriceOne>
+      <GasTarifPrice>64,97</GasTarifPrice>
+    </GasTarifPriceOne>
     <GasTarif2500>
       <GasTarif2500Price>3,029</GasTarif2500Price>
     </GasTarif2500>

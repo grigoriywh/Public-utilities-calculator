@@ -130,6 +130,10 @@ namespace PublicUtilitiesCalculator
 
             writer.WriteStartElement("GasTarif");
 
+            writer.WriteStartElement("GasTarifPriceOne");
+            writer.WriteElementString("GasTarifPrice", obj.GasTarif.ToString());
+            writer.WriteEndElement();
+
             writer.WriteStartElement("GasTarif2500");
             writer.WriteElementString("GasTarif2500Price", obj.GasTarif2500.ToString());
             writer.WriteEndElement();
@@ -275,7 +279,7 @@ namespace PublicUtilitiesCalculator
                 {
                     switch (reader.Name)
                     {
-                        // Квартплата
+
                         case "KvartPlataprice":
                             obj.KvartPlataTarif = float.Parse(reader.ReadElementContentAsString());
                             break;
@@ -290,6 +294,9 @@ namespace PublicUtilitiesCalculator
                             obj.ElectricityTarif800 = float.Parse(reader.ReadElementContentAsString());
                             break;
                         // Природный газ
+                        case "GasTarifPrice":
+                            obj.GasTarif = float.Parse(reader.ReadElementContentAsString());
+                            break;
                         case "GasTarif2500Price":
                             obj.GasTarif2500 = float.Parse(reader.ReadElementContentAsString());
                             break;
@@ -360,6 +367,96 @@ namespace PublicUtilitiesCalculator
             return LocalStringTempValue;
         }
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        //  СобытияФормыНазначенные
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DateTime d = monthCalendar1.SelectionRange.Start;
+
+            int NumberOfMonth = 0;
+            NumberOfMonth = int.Parse(d.Month.ToString());
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = n; i >= 0; i--)
+            {
+                if (NumberOfMonth.Equals(0))
+                    NumberOfMonth = 12;
+                NumberOfMonth--;
+            }
+            string[] months = { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
+
+            /////////////////////////////////////////////////////////////////////////////////////////////
+            // Записываем тарифы в XML
+
+            labelMonth.Text = months[(NumberOfMonth)];
+
+            FormChange();
+        }
+
+
+        public void FormChange()
+        {
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //	Природный газ 
+
+            if (GascheckBox1.Checked == false)
+            {
+
+                GasTarif.Visible = true;
+
+
+                label19.Visible = false;
+                label20.Text = "руб./чел.";
+                label21.Visible = false;
+
+                label22.Visible = false;
+                label23.Visible = false;
+                label24.Visible = false;
+
+                GasTarif2500.Visible = false;
+                GasTarif2500_6000.Visible = false;
+                GasTarif6000.Visible = false;
+
+            }
+            else
+            {
+
+                GasTarif.Visible = false;
+
+                label19.Visible = true;
+                label20.Text = "руб.";
+                label21.Visible = true;
+
+                label22.Visible = true;
+                label23.Visible = true;
+                label24.Visible = true;
+
+                GasTarif2500.Visible = true;
+                GasTarif2500_6000.Visible = true;
+                GasTarif6000.Visible = true;
+            }
+
+
+        }
+
+        public void FormChangeHouseType()
+        {
+
+            if (GascheckBox1.Checked == false)
+            {
+
+
+
+            }
+            else
+            {
+
+            }
+
+
+        }
 
         ///////////////////////////////////////////////////////////////////////////////////////////////
         //		Кнопки 
@@ -371,11 +468,15 @@ namespace PublicUtilitiesCalculator
 
 
 
-        ///////////////////////////////////////////////////////////////////////////////////////////////
-        //	Форма - Выбор директории
 
         private void button1_Click(object sender, EventArgs e)  // Выбор директории
         {
+
+            // Переменные 
+
+            int NumberOfPersons = 0;
+
+
 
             textBox1.Text += Environment.NewLine;
 
@@ -541,12 +642,11 @@ namespace PublicUtilitiesCalculator
                 //ElectricitytextBox5.Text = Convert.ToString(ElectricityResult);
                 ElectricitytextBox5.Text = "Error!";
             }
-
+            
 
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
             // Природный газ
-
 
             float GasOnToTheStartMonth = 0;
             float GasOnToTheEndMonth = 0;
@@ -557,6 +657,7 @@ namespace PublicUtilitiesCalculator
             float floatGasTarif2500_6000 = 0;
             float floatGasTarif6000 = 0;
 
+            float floatGasTarif = 0;
 
             float GasPrice2500 = 0;
             float GasPrice2500_6000 = 0;
@@ -566,86 +667,108 @@ namespace PublicUtilitiesCalculator
             float ValueThisMonth = 0;
             float GasResult = 0;
 
-
-
-
-            // Тарифы
-            if (GasTarif2500.Text != "")
-            {
-                floatGasTarif2500 = float.Parse(GasTarif2500.Text);
-            }
-
-            if (GasTarif2500_6000.Text != "")
-            {
-                floatGasTarif2500_6000 = float.Parse(GasTarif2500_6000.Text);
-            }
-
-            if (GasTarif6000.Text != "")
-            {
-                floatGasTarif6000 = float.Parse(GasTarif6000.Text);
-            }
-
-            // Показания счетчика
-            if (GastextBox1.Text != "")
-            {
-                GasOnToTheStartMonth = float.Parse(GastextBox1.Text);
-            }
-
-            if (GastextBox2.Text != "")
-            {
-                GasOnToTheEndMonth = float.Parse(GastextBox2.Text);
-            }
-
-
-            // Gas - разница в показаниях на начало и конец месяца 
-            GasDifference = GasOnToTheEndMonth - GasOnToTheStartMonth;
-            GastextBox3.Text = Convert.ToString(GasDifference);
-
-            if (GasDifference < 2500)
-            {
-                GasPrice2500 = GasDifference;
-                GasPrice2500_6000 = 0;
-                GasPrice6000 = 0;
-            }
-
-            if (2500 <= GasDifference && GasDifference < 6000)
-            {
-                GasPrice2500 = 2500;
-                GasPrice2500_6000 = GasDifference - 2500;
-                GasPrice6000 = 0;
-            }
-
-            if (6000 <= GasDifference)
-            {
-                GasPrice2500 = 2500;
-                GasPrice2500_6000 = 6000;
-                GasPrice6000 = GasDifference - 6000;
-            }
-
-
-            // Льгота
-            if (checkBoxBenefitChildrenOfWar.Checked == true)
+            // Счетчик (Да/Нет)
+            if (GascheckBox1.Checked == true)
             {
 
-                NumberOfMonth = int.Parse(d.Month.ToString());
-
-                if (5 <= NumberOfMonth && NumberOfMonth <= 9) // Летний период
+                // Тарифы
+                if (GasTarif2500.Text != "")
                 {
-                    ValueThisMonth = 23;
+                    floatGasTarif2500 = float.Parse(GasTarif2500.Text);
                 }
-                else // Зимний период
+
+                if (GasTarif2500_6000.Text != "")
                 {
-                    ValueThisMonth = 370;
+                    floatGasTarif2500_6000 = float.Parse(GasTarif2500_6000.Text);
+                }
+
+                if (GasTarif6000.Text != "")
+                {
+                    floatGasTarif6000 = float.Parse(GasTarif6000.Text);
+                }
+
+                // Показания счетчика
+                if (GastextBox1.Text != "")
+                {
+                    GasOnToTheStartMonth = float.Parse(GastextBox1.Text);
+                }
+
+                if (GastextBox2.Text != "")
+                {
+                    GasOnToTheEndMonth = float.Parse(GastextBox2.Text);
                 }
 
 
-                GasPrice2500 = GasPrice2500 - ValueThisMonth;
-                GasResult = GasResult + (ValueThisMonth * (floatGasTarif2500 / 100) * 75) + (GasPrice2500 * floatGasTarif2500) + (GasPrice2500_6000 * floatGasTarif2500_6000) + (GasPrice6000 * floatGasTarif6000);
+                // Gas - разница в показаниях на начало и конец месяца 
+                GasDifference = GasOnToTheEndMonth - GasOnToTheStartMonth;
+                GastextBox3.Text = Convert.ToString(GasDifference);
+
+                if (GasDifference < 2500)
+                {
+                    GasPrice2500 = GasDifference;
+                    GasPrice2500_6000 = 0;
+                    GasPrice6000 = 0;
+                }
+
+                if (2500 <= GasDifference && GasDifference < 6000)
+                {
+                    GasPrice2500 = 2500;
+                    GasPrice2500_6000 = GasDifference - 2500;
+                    GasPrice6000 = 0;
+                }
+
+                if (6000 <= GasDifference)
+                {
+                    GasPrice2500 = 2500;
+                    GasPrice2500_6000 = 6000;
+                    GasPrice6000 = GasDifference - 6000;
+                }
+
+
+                // Льгота
+                if (checkBoxBenefitChildrenOfWar.Checked == true)
+                {
+
+                    NumberOfMonth = int.Parse(d.Month.ToString());
+
+                    if (5 <= NumberOfMonth && NumberOfMonth <= 9) // Летний период
+                    {
+                        ValueThisMonth = 23;
+                    }
+                    else // Зимний период
+                    {
+                        ValueThisMonth = 370;
+                    }
+
+
+                    GasPrice2500 = GasPrice2500 - ValueThisMonth;
+                    GasResult = GasResult + (ValueThisMonth * (floatGasTarif2500 / 100) * 75) + (GasPrice2500 * floatGasTarif2500) + (GasPrice2500_6000 * floatGasTarif2500_6000) + (GasPrice6000 * floatGasTarif6000);
+                }
+                else
+                {
+                    GasResult = GasResult + (GasPrice2500 * floatGasTarif2500) + (GasPrice2500_6000 * floatGasTarif2500_6000) + (GasPrice6000 * floatGasTarif6000);
+                }
+
             }
             else
             {
-                GasResult = GasResult + (GasPrice2500 * floatGasTarif2500) + (GasPrice2500_6000 * floatGasTarif2500_6000) + (GasPrice6000 * floatGasTarif6000);
+
+                // Тарифы
+                if (GasTarif.Text != "")
+                {
+                    floatGasTarif = float.Parse(GasTarif.Text);
+                }
+
+
+                if (HumantextBox.Text != "")
+                {
+                    NumberOfPersons = int.Parse(HumantextBox.Text);
+                }
+
+                GasResult = NumberOfPersons * floatGasTarif;
             }
+
+
 
             if (GasResult < 0) 
             {
@@ -653,21 +776,6 @@ namespace PublicUtilitiesCalculator
             }
 
             GastextBox5.Text = Convert.ToString(GasResult);
-
-
-
-            // Счетчик
-            if (GascheckBox1.Checked != true)
-            {
-
-                GasResult = GasDifference * GasPrice2500;
-
-                //GasResult = 777;
-                //GastextBox5.Text = Convert.ToString(GasResult);
-                GastextBox5.Text = "Error!";
-            }
-
-
 
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -754,10 +862,20 @@ namespace PublicUtilitiesCalculator
 
 
             float TrashResult = 0;
+            float floatTrashTarif = 0;
 
+            if (TrashTarif.Text != "")
+            {
+                floatTrashTarif = float.Parse(TrashTarif.Text);
+            }
 
+            if (HumantextBox.Text != "")
+            {
+                NumberOfPersons = int.Parse(HumantextBox.Text);
+            }
 
-
+            TrashResult = NumberOfPersons * floatTrashTarif;
+            TrashtextBox5.Text = Convert.ToString(TrashResult);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
             // Итого
@@ -779,7 +897,7 @@ namespace PublicUtilitiesCalculator
             labelMonth.Text = months[(NumberOfMonth)];
 
 
-            textBoxSUMM.Text = Convert.ToString(ElectricityResult + GasResult + WaterResult + HeatingResult + TrashResult);
+            textBoxSUMM.Text = Convert.ToString(KvartPlataResult + ElectricityResult + GasResult + WaterResult + HeatingResult + TrashResult);
 
 
 
@@ -788,6 +906,9 @@ namespace PublicUtilitiesCalculator
         }
 
 
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        //	Форма - Сохранение данных
         private void TarifiSave_Click(object sender, EventArgs e)
         {
 
@@ -799,6 +920,8 @@ namespace PublicUtilitiesCalculator
             ElectricityTarif150.Text = StrManipulations(ElectricityTarif150.Text);
             ElectricityTarif150_800.Text = StrManipulations(ElectricityTarif150_800.Text);
             ElectricityTarif800.Text = StrManipulations(ElectricityTarif800.Text);
+
+            GasTarif.Text = StrManipulations(GasTarif.Text);
 
             GasTarif2500.Text = StrManipulations(GasTarif2500.Text);
             GasTarif2500_6000.Text = StrManipulations(GasTarif2500_6000.Text);
@@ -815,6 +938,7 @@ namespace PublicUtilitiesCalculator
             float floatElectricityTarif150_800 = 0;
             float floatElectricityTarif800 = 0;
 
+            float floatGasTarif = 0;
             float floatGasTarif2500 = 0;
             float floatGasTarif2500_6000 = 0;
             float floatGasTarif6000 = 0;
@@ -851,6 +975,12 @@ namespace PublicUtilitiesCalculator
 
 
             // Природный газ
+
+            if (GasTarif.Text != "")
+            {
+                floatGasTarif = float.Parse(GasTarif.Text);
+            }
+
             if (GasTarif2500.Text != "")
             {
                 floatGasTarif2500 = float.Parse(GasTarif2500.Text);
@@ -895,6 +1025,7 @@ namespace PublicUtilitiesCalculator
             src.ElectricityTarif150_800 = floatElectricityTarif150_800;
             src.ElectricityTarif800 = floatElectricityTarif800;
 
+            src.GasTarif = floatGasTarif;
             src.GasTarif2500 = floatGasTarif2500;
             src.GasTarif2500_6000 = floatGasTarif2500_6000;
             src.GasTarif6000 = floatGasTarif6000;
@@ -942,7 +1073,6 @@ namespace PublicUtilitiesCalculator
 
         }
 
-
         private void TarifiLoad_Click(object sender, EventArgs e)
         {
 
@@ -966,6 +1096,8 @@ namespace PublicUtilitiesCalculator
                 ElectricityTarif800.Text = Convert.ToString(dst.ElectricityTarif800);
 
                 // Природный газ
+                GasTarif.Text = Convert.ToString(dst.GasTarif);
+
                 GasTarif2500.Text = Convert.ToString(dst.GasTarif2500);
                 GasTarif2500_6000.Text = Convert.ToString(dst.GasTarif2500_6000);
                 GasTarif6000.Text = Convert.ToString(dst.GasTarif6000);
@@ -984,6 +1116,10 @@ namespace PublicUtilitiesCalculator
         }
 
 
+
+
+
+
         private void folderBrowserDialog1_HelpRequest_1(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
@@ -994,30 +1130,39 @@ namespace PublicUtilitiesCalculator
 
 
 
-        private void Form1_Load(object sender, EventArgs e)
+
+
+
+        private void GascheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            DateTime d = monthCalendar1.SelectionRange.Start;
-
-            int NumberOfMonth = 0;
-            NumberOfMonth = int.Parse(d.Month.ToString());
-
-            int n = Convert.ToInt32(Console.ReadLine());
-            for (int i = n; i >= 0; i--)
-            {
-                if (NumberOfMonth.Equals(0))
-                    NumberOfMonth = 12;
-                NumberOfMonth--;
-            }
-            string[] months = { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
-
-            /////////////////////////////////////////////////////////////////////////////////////////////
-            // Записываем тарифы в XML
-
-            labelMonth.Text = months[(NumberOfMonth)];
+            FormChange();
         }
 
+        private void HousecheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HousecheckBox.Checked == true)
+            {
+                ApartmentcheckBox.Checked = false;
+            }
+            else
+            {
+                ApartmentcheckBox.Checked = true;
+            }
+            FormChangeHouseType();
+        }
 
-
+        private void ApartmentcheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ApartmentcheckBox.Checked == true)
+            {
+                HousecheckBox.Checked = false;
+            }
+            else
+            {
+                HousecheckBox.Checked = true;
+            }
+            FormChangeHouseType();
+        }
 
         ///////////////////////////////////////////////////////////////////////////////////////////////
         //	Пустые функции 
@@ -1027,9 +1172,6 @@ namespace PublicUtilitiesCalculator
         {
 
         }
-
-
-
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -1066,9 +1208,6 @@ namespace PublicUtilitiesCalculator
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }

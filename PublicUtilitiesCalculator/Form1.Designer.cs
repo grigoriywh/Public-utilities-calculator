@@ -32,9 +32,9 @@ namespace PublicUtilitiesCalculator
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1Result = new System.Windows.Forms.Button();
             this.TarifiLoad = new System.Windows.Forms.Button();
             this.TarifiSave = new System.Windows.Forms.Button();
-            this.button1Result = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.KvartPlatatextBox = new System.Windows.Forms.TextBox();
@@ -125,6 +125,13 @@ namespace PublicUtilitiesCalculator
             this.label36 = new System.Windows.Forms.Label();
             this.textBoxSUMM = new System.Windows.Forms.TextBox();
             this.labelMonth = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.ApartmentcheckBox = new System.Windows.Forms.CheckBox();
+            this.HousecheckBox = new System.Windows.Forms.CheckBox();
+            this.HumantextBox = new System.Windows.Forms.TextBox();
+            this.GasTarif = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.KvartPlatagroupBox.SuspendLayout();
             this.ElectricitygroupBox.SuspendLayout();
@@ -134,6 +141,7 @@ namespace PublicUtilitiesCalculator
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // button7
@@ -151,6 +159,13 @@ namespace PublicUtilitiesCalculator
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // button1Result
+            // 
+            resources.ApplyResources(this.button1Result, "button1Result");
+            this.button1Result.Name = "button1Result";
+            this.button1Result.UseVisualStyleBackColor = true;
+            this.button1Result.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TarifiLoad
             // 
             resources.ApplyResources(this.TarifiLoad, "TarifiLoad");
@@ -164,13 +179,6 @@ namespace PublicUtilitiesCalculator
             this.TarifiSave.Name = "TarifiSave";
             this.TarifiSave.UseVisualStyleBackColor = true;
             this.TarifiSave.Click += new System.EventHandler(this.TarifiSave_Click);
-            // 
-            // button1Result
-            // 
-            resources.ApplyResources(this.button1Result, "button1Result");
-            this.button1Result.Name = "button1Result";
-            this.button1Result.UseVisualStyleBackColor = true;
-            this.button1Result.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -395,6 +403,7 @@ namespace PublicUtilitiesCalculator
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.GasTarif);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.label20);
@@ -487,6 +496,7 @@ namespace PublicUtilitiesCalculator
             this.GascheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.GascheckBox1.Name = "GascheckBox1";
             this.GascheckBox1.UseVisualStyleBackColor = true;
+            this.GascheckBox1.CheckedChanged += new System.EventHandler(this.GascheckBox1_CheckedChanged);
             // 
             // GastextBox1
             // 
@@ -722,10 +732,58 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.labelMonth, "labelMonth");
             this.labelMonth.Name = "labelMonth";
             // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label38);
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Controls.Add(this.ApartmentcheckBox);
+            this.groupBox8.Controls.Add(this.HousecheckBox);
+            this.groupBox8.Controls.Add(this.HumantextBox);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.Name = "label38";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
+            // ApartmentcheckBox
+            // 
+            resources.ApplyResources(this.ApartmentcheckBox, "ApartmentcheckBox");
+            this.ApartmentcheckBox.Name = "ApartmentcheckBox";
+            this.ApartmentcheckBox.UseVisualStyleBackColor = true;
+            this.ApartmentcheckBox.CheckedChanged += new System.EventHandler(this.ApartmentcheckBox_CheckedChanged);
+            // 
+            // HousecheckBox
+            // 
+            resources.ApplyResources(this.HousecheckBox, "HousecheckBox");
+            this.HousecheckBox.Checked = true;
+            this.HousecheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.HousecheckBox.Name = "HousecheckBox";
+            this.HousecheckBox.UseVisualStyleBackColor = true;
+            this.HousecheckBox.CheckedChanged += new System.EventHandler(this.HousecheckBox_CheckedChanged);
+            // 
+            // HumantextBox
+            // 
+            resources.ApplyResources(this.HumantextBox, "HumantextBox");
+            this.HumantextBox.Name = "HumantextBox";
+            // 
+            // GasTarif
+            // 
+            resources.ApplyResources(this.GasTarif, "GasTarif");
+            this.GasTarif.Name = "GasTarif";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.labelMonth);
             this.Controls.Add(this.textBoxSUMM);
             this.Controls.Add(this.label36);
@@ -766,6 +824,8 @@ namespace PublicUtilitiesCalculator
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -867,6 +927,13 @@ namespace PublicUtilitiesCalculator
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox textBoxSUMM;
         private System.Windows.Forms.Label labelMonth;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.CheckBox ApartmentcheckBox;
+        private System.Windows.Forms.CheckBox HousecheckBox;
+        private System.Windows.Forms.TextBox HumantextBox;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox GasTarif;
     }
 }
 
