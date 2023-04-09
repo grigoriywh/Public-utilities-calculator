@@ -467,8 +467,9 @@ namespace PublicUtilitiesCalculator
         }
 
 
-
-
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        //	Рассчитать
+        ///////////////////////////////////////////////////////////////////////////////////////////////
         private void button1_Click(object sender, EventArgs e)  // Выбор директории
         {
 
@@ -892,14 +893,33 @@ namespace PublicUtilitiesCalculator
             string[] months = { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
 
             /////////////////////////////////////////////////////////////////////////////////////////////
-            // Записываем тарифы в XML
+            // Вывод
 
             labelMonth.Text = months[(NumberOfMonth)];
 
-
             textBoxSUMM.Text = Convert.ToString(KvartPlataResult + ElectricityResult + GasResult + WaterResult + HeatingResult + TrashResult);
 
+            if (HousecheckBox.Checked != true)
+            {
 
+                /////////////////////////////////////////////////////////////////////////////////////////////
+                // Вывод
+
+                labelMonth.Text = months[(NumberOfMonth)];
+
+                textBoxSUMM.Text = Convert.ToString(KvartPlataResult + ElectricityResult + GasResult + WaterResult + HeatingResult + TrashResult);
+
+            }
+            else
+            {
+
+                KvartPlatatextBox5.Text = "0";
+                HeatingtextBox5.Text = "0";
+
+                labelMonth.Text = months[(NumberOfMonth)];
+                textBoxSUMM.Text = Convert.ToString(ElectricityResult + GasResult + WaterResult + TrashResult);
+
+            }
 
 
 
