@@ -316,10 +316,6 @@ namespace PublicUtilitiesCalculator
             textBox1.Text = "";
         }
 
-        private void Clear2_Click(object sender, EventArgs e)
-        {
-            KvartPlatatextBox.Text = "";
-        }
 
 
         ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -334,10 +330,6 @@ namespace PublicUtilitiesCalculator
 
             textBox1.Text = textBox1.Text + "\n Дата :" + DateTime.Now.ToLongDateString() + "  " + DateTime.Now.ToLongTimeString();
             textBox1.Text += Environment.NewLine;
-
-
-
-
 
             DateTime d = monthCalendar1.SelectionRange.Start;
             textBox1.Text = textBox1.Text + "\n Дата :" + d.Date.ToString();
@@ -380,15 +372,35 @@ namespace PublicUtilitiesCalculator
             float ElectricityOnToTheEndMonth = 0;
             float ElectricityDifference = 0;
 
+            float ElectricityPrice150 = 0;
+            float ElectricityPrice150_800 = 0;
+            float ElectricityPrice800 = 0;
+
+
 
             float ElectricityResult = 0;
-            float floatElectricityTarif = 0;
 
+            float floatElectricityTarif150 = 0;
+            float floatElectricityTarif150_800 = 0;
+            float floatElectricityTarif800 = 0;
+
+            // Тарифы
             if (ElectricityTarif150.Text != "")
             {
-                floatElectricityTarif = float.Parse(ElectricityTarif150.Text);
+                floatElectricityTarif150 = float.Parse(ElectricityTarif150.Text);
             }
 
+            if (ElectricityTarif150_800.Text != "")
+            {
+                floatElectricityTarif150_800 = float.Parse(ElectricityTarif150_800.Text);
+            }
+
+            if (ElectricityTarif800.Text != "")
+            {
+                floatElectricityTarif800 = float.Parse(ElectricityTarif800.Text);
+            }
+
+            // Показания счетчика
             if (ElectricitytextBox1.Text != "")
             {
                 ElectricityOnToTheStartMonth = float.Parse(ElectricitytextBox1.Text);
@@ -400,6 +412,7 @@ namespace PublicUtilitiesCalculator
             }
 
 
+            // Счетчик
             if (ElectricitycheckBox1.Checked != true)
             {
                 ElectricityResult = 777;
@@ -409,40 +422,84 @@ namespace PublicUtilitiesCalculator
 
             // Элекетроэнергия - разница в показаниях на начало и конец меясяца 
             ElectricityDifference = ElectricityOnToTheEndMonth - ElectricityOnToTheStartMonth;
+            ElectricitytextBox3.Text = Convert.ToString(ElectricityDifference);
+
+            if (ElectricityDifference < 150)
+            {
+                ElectricityPrice150 = ElectricityDifference;
+                ElectricityPrice150_800 = 0;
+                ElectricityPrice800 = 0;
+            }
+
+            if (150 < ElectricityDifference  && ElectricityDifference < 800)
+            {
+                ElectricityPrice150 = 150;
+                ElectricityPrice150_800 = ElectricityDifference - 150;
+                ElectricityPrice800 = 0;
+            }
+
+            if (800 < ElectricityDifference)
+            {
+                ElectricityPrice150 = 150;
+                ElectricityPrice150_800 = 800;
+                ElectricityPrice800 = ElectricityDifference - 800;
+            }
 
 
 
-
-
+            // Льгота
             if (checkBoxBenefitChildrenOfWar.Checked == true)
             {
-
-
-
-
+                ElectricityPrice150 = ElectricityPrice150 - 75;
+                ElectricityResult = ElectricityResult + (75 * (floatElectricityTarif150 / 100) * 75) + (ElectricityPrice150 * floatElectricityTarif150) + (ElectricityPrice150_800 * floatElectricityTarif150_800) + (ElectricityPrice800 * floatElectricityTarif800);
             }
             else
             {
-
-
+                ElectricityResult = ElectricityResult + (ElectricityPrice150 * floatElectricityTarif150) + (ElectricityPrice150_800 * floatElectricityTarif150_800) + (ElectricityPrice800 * floatElectricityTarif800);
             }
+
+            ElectricitytextBox5.Text = Convert.ToString(ElectricityResult);
 
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
             // Природный газ
 
+
+            float GasOnToTheStartMonth = 0;
+            float GasOnToTheEndMonth = 0;
+            float GasDifference = 0;
+
+            float GasPrice150 = 0;
+            float GasPrice150_800 = 0;
+            float GasPrice800 = 0;
+
+
+
+            float GasResult = 0;
+
+            float floatGasTarif150 = 0;
+            float floatGasTarif150_800 = 0;
+            float floatGasTarif800 = 0;
+
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            // Вода
+
+            float WaterOnToTheStartMonth = 0;
+            float WaterOnToTheEndMonth = 0;
+            float WaterDifference = 0;
+
+            float WaterResult = 0;
+
+            float floatWaterTarif = 0;
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            // Отопление
+
         }
 
-        private void button2_Click(object sender, EventArgs e)  // Считать files
-        {
-
-            DirectoryReading handler = new Class();
-
-            List<string> list = new List<string>();
-            string dirName = textBox1.Text;
-
-
-        }
 
         private void TarifiSave_Click(object sender, EventArgs e)
         {
@@ -609,6 +666,14 @@ namespace PublicUtilitiesCalculator
 
         }
 
+        private void label24_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

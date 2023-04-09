@@ -30,12 +30,11 @@ namespace PublicUtilitiesCalculator
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TarifiLoad = new System.Windows.Forms.Button();
             this.TarifiSave = new System.Windows.Forms.Button();
             this.button1Result = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.KvartPlatatextBox = new System.Windows.Forms.TextBox();
@@ -46,6 +45,8 @@ namespace PublicUtilitiesCalculator
             this.KvartPlatacheckBoxChetchik = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.KvartPlatagroupBox = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.KvartPlatatextBox5 = new System.Windows.Forms.TextBox();
             this.KvartPlataTarif = new System.Windows.Forms.TextBox();
             this.KvartPlatatextBox3 = new System.Windows.Forms.TextBox();
@@ -55,30 +56,80 @@ namespace PublicUtilitiesCalculator
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label8 = new System.Windows.Forms.Label();
             this.ElectricitygroupBox = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ElectricityTarif800 = new System.Windows.Forms.TextBox();
+            this.ElectricityTarif150 = new System.Windows.Forms.TextBox();
+            this.ElectricityTarif150_800 = new System.Windows.Forms.TextBox();
             this.ElectricitytextBox5 = new System.Windows.Forms.TextBox();
             this.ElectricitytextBox3 = new System.Windows.Forms.TextBox();
             this.ElectricitytextBox2 = new System.Windows.Forms.TextBox();
             this.ElectricitycheckBox1 = new System.Windows.Forms.CheckBox();
             this.ElectricitytextBox1 = new System.Windows.Forms.TextBox();
-            this.TarifiLoad = new System.Windows.Forms.Button();
             this.checkBoxBenefitChildrenOfWar = new System.Windows.Forms.CheckBox();
-            this.ElectricityTarif150_800 = new System.Windows.Forms.TextBox();
-            this.ElectricityTarif150 = new System.Windows.Forms.TextBox();
-            this.ElectricityTarif800 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.GasTarif6000 = new System.Windows.Forms.TextBox();
+            this.GasTarif2500 = new System.Windows.Forms.TextBox();
+            this.GasTarif2500_6000 = new System.Windows.Forms.TextBox();
+            this.GastextBox5 = new System.Windows.Forms.TextBox();
+            this.GastextBox3 = new System.Windows.Forms.TextBox();
+            this.GastextBox2 = new System.Windows.Forms.TextBox();
+            this.GascheckBox = new System.Windows.Forms.CheckBox();
+            this.GastextBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.WatertextBox5 = new System.Windows.Forms.TextBox();
+            this.WaterTarif = new System.Windows.Forms.TextBox();
+            this.WatertextBox3 = new System.Windows.Forms.TextBox();
+            this.WatertextBox2 = new System.Windows.Forms.TextBox();
+            this.WatercheckBox1 = new System.Windows.Forms.CheckBox();
+            this.WatertextBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.KvartPlatagroupBox.SuspendLayout();
             this.ElectricitygroupBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Clear2_Click);
             // 
             // button7
             // 
@@ -89,17 +140,20 @@ namespace PublicUtilitiesCalculator
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBoxBenefitChildrenOfWar);
             this.groupBox2.Controls.Add(this.TarifiLoad);
             this.groupBox2.Controls.Add(this.TarifiSave);
-            this.groupBox2.Controls.Add(this.monthCalendar1);
             this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.button1Result);
-            this.groupBox2.Controls.Add(this.button2);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // TarifiLoad
+            // 
+            resources.ApplyResources(this.TarifiLoad, "TarifiLoad");
+            this.TarifiLoad.Name = "TarifiLoad";
+            this.TarifiLoad.UseVisualStyleBackColor = true;
+            this.TarifiLoad.Click += new System.EventHandler(this.TarifiLoad_Click);
             // 
             // TarifiSave
             // 
@@ -114,13 +168,6 @@ namespace PublicUtilitiesCalculator
             this.button1Result.Name = "button1Result";
             this.button1Result.UseVisualStyleBackColor = true;
             this.button1Result.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -175,6 +222,8 @@ namespace PublicUtilitiesCalculator
             // 
             // KvartPlatagroupBox
             // 
+            this.KvartPlatagroupBox.Controls.Add(this.label16);
+            this.KvartPlatagroupBox.Controls.Add(this.label15);
             this.KvartPlatagroupBox.Controls.Add(this.KvartPlatatextBox5);
             this.KvartPlatagroupBox.Controls.Add(this.KvartPlataTarif);
             this.KvartPlatagroupBox.Controls.Add(this.KvartPlatatextBox3);
@@ -185,6 +234,16 @@ namespace PublicUtilitiesCalculator
             this.KvartPlatagroupBox.Name = "KvartPlatagroupBox";
             this.KvartPlatagroupBox.TabStop = false;
             this.KvartPlatagroupBox.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
             // 
             // KvartPlatatextBox5
             // 
@@ -228,6 +287,10 @@ namespace PublicUtilitiesCalculator
             // 
             // ElectricitygroupBox
             // 
+            this.ElectricitygroupBox.Controls.Add(this.label17);
+            this.ElectricitygroupBox.Controls.Add(this.label14);
+            this.ElectricitygroupBox.Controls.Add(this.label13);
+            this.ElectricitygroupBox.Controls.Add(this.label12);
             this.ElectricitygroupBox.Controls.Add(this.label11);
             this.ElectricitygroupBox.Controls.Add(this.label10);
             this.ElectricitygroupBox.Controls.Add(this.label9);
@@ -242,6 +305,56 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.ElectricitygroupBox, "ElectricitygroupBox");
             this.ElectricitygroupBox.Name = "ElectricitygroupBox";
             this.ElectricitygroupBox.TabStop = false;
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // ElectricityTarif800
+            // 
+            resources.ApplyResources(this.ElectricityTarif800, "ElectricityTarif800");
+            this.ElectricityTarif800.Name = "ElectricityTarif800";
+            // 
+            // ElectricityTarif150
+            // 
+            resources.ApplyResources(this.ElectricityTarif150, "ElectricityTarif150");
+            this.ElectricityTarif150.Name = "ElectricityTarif150";
+            // 
+            // ElectricityTarif150_800
+            // 
+            resources.ApplyResources(this.ElectricityTarif150_800, "ElectricityTarif150_800");
+            this.ElectricityTarif150_800.Name = "ElectricityTarif150_800";
             // 
             // ElectricitytextBox5
             // 
@@ -271,56 +384,331 @@ namespace PublicUtilitiesCalculator
             resources.ApplyResources(this.ElectricitytextBox1, "ElectricitytextBox1");
             this.ElectricitytextBox1.Name = "ElectricitytextBox1";
             // 
-            // TarifiLoad
-            // 
-            resources.ApplyResources(this.TarifiLoad, "TarifiLoad");
-            this.TarifiLoad.Name = "TarifiLoad";
-            this.TarifiLoad.UseVisualStyleBackColor = true;
-            this.TarifiLoad.Click += new System.EventHandler(this.TarifiLoad_Click);
-            // 
             // checkBoxBenefitChildrenOfWar
             // 
             resources.ApplyResources(this.checkBoxBenefitChildrenOfWar, "checkBoxBenefitChildrenOfWar");
             this.checkBoxBenefitChildrenOfWar.Name = "checkBoxBenefitChildrenOfWar";
             this.checkBoxBenefitChildrenOfWar.UseVisualStyleBackColor = true;
             // 
-            // ElectricityTarif150_800
+            // groupBox1
             // 
-            resources.ApplyResources(this.ElectricityTarif150_800, "ElectricityTarif150_800");
-            this.ElectricityTarif150_800.Name = "ElectricityTarif150_800";
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.Controls.Add(this.GasTarif6000);
+            this.groupBox1.Controls.Add(this.GasTarif2500);
+            this.groupBox1.Controls.Add(this.GasTarif2500_6000);
+            this.groupBox1.Controls.Add(this.GastextBox5);
+            this.groupBox1.Controls.Add(this.GastextBox3);
+            this.groupBox1.Controls.Add(this.GastextBox2);
+            this.groupBox1.Controls.Add(this.GascheckBox);
+            this.groupBox1.Controls.Add(this.GastextBox1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
-            // ElectricityTarif150
+            // label18
             // 
-            resources.ApplyResources(this.ElectricityTarif150, "ElectricityTarif150");
-            this.ElectricityTarif150.Name = "ElectricityTarif150";
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
             // 
-            // ElectricityTarif800
+            // label19
             // 
-            resources.ApplyResources(this.ElectricityTarif800, "ElectricityTarif800");
-            this.ElectricityTarif800.Name = "ElectricityTarif800";
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
             // 
-            // label9
+            // label20
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
             // 
-            // label10
+            // label21
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
             // 
-            // label11
+            // label22
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
+            // 
+            // GasTarif6000
+            // 
+            resources.ApplyResources(this.GasTarif6000, "GasTarif6000");
+            this.GasTarif6000.Name = "GasTarif6000";
+            // 
+            // GasTarif2500
+            // 
+            resources.ApplyResources(this.GasTarif2500, "GasTarif2500");
+            this.GasTarif2500.Name = "GasTarif2500";
+            // 
+            // GasTarif2500_6000
+            // 
+            resources.ApplyResources(this.GasTarif2500_6000, "GasTarif2500_6000");
+            this.GasTarif2500_6000.Name = "GasTarif2500_6000";
+            // 
+            // GastextBox5
+            // 
+            resources.ApplyResources(this.GastextBox5, "GastextBox5");
+            this.GastextBox5.Name = "GastextBox5";
+            // 
+            // GastextBox3
+            // 
+            resources.ApplyResources(this.GastextBox3, "GastextBox3");
+            this.GastextBox3.Name = "GastextBox3";
+            // 
+            // GastextBox2
+            // 
+            resources.ApplyResources(this.GastextBox2, "GastextBox2");
+            this.GastextBox2.Name = "GastextBox2";
+            // 
+            // GascheckBox
+            // 
+            resources.ApplyResources(this.GascheckBox, "GascheckBox");
+            this.GascheckBox.Checked = true;
+            this.GascheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.GascheckBox.Name = "GascheckBox";
+            this.GascheckBox.UseVisualStyleBackColor = true;
+            // 
+            // GastextBox1
+            // 
+            resources.ApplyResources(this.GastextBox1, "GastextBox1");
+            this.GastextBox1.Name = "GastextBox1";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.WatertextBox5);
+            this.groupBox3.Controls.Add(this.WaterTarif);
+            this.groupBox3.Controls.Add(this.WatertextBox3);
+            this.groupBox3.Controls.Add(this.WatertextBox2);
+            this.groupBox3.Controls.Add(this.WatercheckBox1);
+            this.groupBox3.Controls.Add(this.WatertextBox1);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // WatertextBox5
+            // 
+            resources.ApplyResources(this.WatertextBox5, "WatertextBox5");
+            this.WatertextBox5.Name = "WatertextBox5";
+            // 
+            // WaterTarif
+            // 
+            resources.ApplyResources(this.WaterTarif, "WaterTarif");
+            this.WaterTarif.Name = "WaterTarif";
+            // 
+            // WatertextBox3
+            // 
+            resources.ApplyResources(this.WatertextBox3, "WatertextBox3");
+            this.WatertextBox3.Name = "WatertextBox3";
+            // 
+            // WatertextBox2
+            // 
+            resources.ApplyResources(this.WatertextBox2, "WatertextBox2");
+            this.WatertextBox2.Name = "WatertextBox2";
+            // 
+            // WatercheckBox1
+            // 
+            resources.ApplyResources(this.WatercheckBox1, "WatercheckBox1");
+            this.WatercheckBox1.Checked = true;
+            this.WatercheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.WatercheckBox1.Name = "WatercheckBox1";
+            this.WatercheckBox1.UseVisualStyleBackColor = true;
+            // 
+            // WatertextBox1
+            // 
+            resources.ApplyResources(this.WatertextBox1, "WatertextBox1");
+            this.WatertextBox1.Name = "WatertextBox1";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label31);
+            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.checkBoxBenefitChildrenOfWar);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.Name = "label31";
+            // 
+            // label30
+            // 
+            this.label30.AllowDrop = true;
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // label29
+            // 
+            this.label29.AllowDrop = true;
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.textBox4);
+            this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Controls.Add(this.checkBox1);
+            this.groupBox5.Controls.Add(this.textBox6);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.Name = "label32";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.Name = "label33";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.Name = "textBox4";
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
+            // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label34);
+            this.groupBox6.Controls.Add(this.label35);
+            this.groupBox6.Controls.Add(this.textBox7);
+            this.groupBox6.Controls.Add(this.textBox8);
+            this.groupBox6.Controls.Add(this.textBox9);
+            this.groupBox6.Controls.Add(this.textBox10);
+            this.groupBox6.Controls.Add(this.checkBox2);
+            this.groupBox6.Controls.Add(this.textBox11);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Name = "label34";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Name = "label35";
+            // 
+            // textBox7
+            // 
+            resources.ApplyResources(this.textBox7, "textBox7");
+            this.textBox7.Name = "textBox7";
+            // 
+            // textBox8
+            // 
+            resources.ApplyResources(this.textBox8, "textBox8");
+            this.textBox8.Name = "textBox8";
+            // 
+            // textBox9
+            // 
+            resources.ApplyResources(this.textBox9, "textBox9");
+            this.textBox9.Name = "textBox9";
+            // 
+            // textBox10
+            // 
+            resources.ApplyResources(this.textBox10, "textBox10");
+            this.textBox10.Name = "textBox10";
+            // 
+            // checkBox2
+            // 
+            resources.ApplyResources(this.checkBox2, "checkBox2");
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // textBox11
+            // 
+            resources.ApplyResources(this.textBox11, "textBox11");
+            this.textBox11.Name = "textBox11";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ElectricitygroupBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.KvartPlatagroupBox);
             this.Controls.Add(this.label5);
@@ -333,25 +721,32 @@ namespace PublicUtilitiesCalculator
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.KvartPlatagroupBox.ResumeLayout(false);
             this.KvartPlatagroupBox.PerformLayout();
             this.ElectricitygroupBox.ResumeLayout(false);
             this.ElectricitygroupBox.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1Result;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.TextBox KvartPlatatextBox;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -382,6 +777,61 @@ namespace PublicUtilitiesCalculator
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox GasTarif6000;
+        private System.Windows.Forms.TextBox GasTarif2500;
+        private System.Windows.Forms.TextBox GasTarif2500_6000;
+        private System.Windows.Forms.TextBox GastextBox5;
+        private System.Windows.Forms.TextBox GastextBox3;
+        private System.Windows.Forms.TextBox GastextBox2;
+        public System.Windows.Forms.CheckBox GascheckBox;
+        private System.Windows.Forms.TextBox GastextBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox WatertextBox5;
+        private System.Windows.Forms.TextBox WaterTarif;
+        private System.Windows.Forms.TextBox WatertextBox3;
+        private System.Windows.Forms.TextBox WatertextBox2;
+        public System.Windows.Forms.CheckBox WatercheckBox1;
+        private System.Windows.Forms.TextBox WatertextBox1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        public System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.TextBox textBox11;
     }
 }
 
