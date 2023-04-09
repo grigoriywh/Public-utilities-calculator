@@ -122,6 +122,9 @@ namespace PublicUtilitiesCalculator
             this.TrashcheckBox1 = new System.Windows.Forms.CheckBox();
             this.TrashtextBox1 = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBoxSUMM = new System.Windows.Forms.TextBox();
+            this.labelMonth = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.KvartPlatagroupBox.SuspendLayout();
             this.ElectricitygroupBox.SuspendLayout();
@@ -704,10 +707,28 @@ namespace PublicUtilitiesCalculator
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
+            // textBoxSUMM
+            // 
+            resources.ApplyResources(this.textBoxSUMM, "textBoxSUMM");
+            this.textBoxSUMM.Name = "textBoxSUMM";
+            // 
+            // labelMonth
+            // 
+            resources.ApplyResources(this.labelMonth, "labelMonth");
+            this.labelMonth.Name = "labelMonth";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.labelMonth);
+            this.Controls.Add(this.textBoxSUMM);
+            this.Controls.Add(this.label36);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
@@ -843,6 +864,9 @@ namespace PublicUtilitiesCalculator
         public System.Windows.Forms.CheckBox TrashcheckBox1;
         private System.Windows.Forms.TextBox TrashtextBox1;
         private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBoxSUMM;
+        private System.Windows.Forms.Label labelMonth;
     }
 }
 
